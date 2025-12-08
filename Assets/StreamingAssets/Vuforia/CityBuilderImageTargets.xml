@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="school" size="1.000000 1.000000" />
+    <ImageTarget name="hospital" size="1.000000 1.000000" />
+    <ImageTarget name="park" size="1.000000 1.000000" />
+    <ImageTarget name="green_mall" size="1.000000 1.000000" />
+    <ImageTarget name="orange_mall" size="1.000000 0.996383" />
+    <ImageTarget name="blue_mall" size="1.000000 0.996396" />
+    <ImageTarget name="blue_factory" size="1.000000 1.000000" />
+    <ImageTarget name="brown_factory" size="1.000000 0.996383" />
+    <ImageTarget name="orange_factory" size="1.000000 1.000000" />
+    <ImageTarget name="city" size="1.000000 1.000000" />
+    <ImageTarget name="brown_house" size="1.000000 0.981917" />
+    <ImageTarget name="blue_house" size="1.000000 1.007220" />
+    <ImageTarget name="purple_house" size="1.000000 0.961872" />
+    <ImageTarget name="green_house" size="1.000000 1.000000" />
+    <ImageTarget name="orange_house" size="1.000000 0.996383" />
+  </Tracking>
+</QCARConfig>

@@ -1,0 +1,689 @@
+Using pre-set license
+Built from '2022.3/respin/2022.3.62f2-4af31df585-v2' branch; Version is '2022.3.62f3 (96770f904ca7) revision 9860879'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit Core' Language: 'en' Physical Memory: 15775 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.62f3\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/City Builder
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+57561
+Successfully changed project path to: D:/City Builder
+D:/City Builder
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [23920]  Target information:
+
+Player connection [23920]  * "[IP] 192.168.1.124 [Port] 0 [Flags] 2 [Guid] 2300665857 [EditorId] 2300665857 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-084FIPT6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [23920] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [23920] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+Refreshing native plugins compatible for Editor in 33.79 ms, found 6 plugins.
+Preloading 2 native plugins for Editor in 5.09 ms.
+Initialize engine version: 2022.3.62f3 (96770f904ca7)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.62f3/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/City Builder/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3050 Ti Laptop GPU (ID=0x25a0)
+    Vendor:   NVIDIA
+    VRAM:     3962 MB
+    Driver:   32.0.15.7602
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f3/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56204
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.026687 seconds.
+- Loaded All Assemblies, in  0.733 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 497 ms
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.142 seconds
+Domain Reload Profiling: 1870ms
+	BeginReloadAssembly (202ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (69ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (141ms)
+	LoadAllAssembliesAndSetupDomain (295ms)
+		LoadAssemblies (198ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (291ms)
+			TypeCache.Refresh (288ms)
+				TypeCache.ScanAssembly (264ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1143ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1055ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (713ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (231ms)
+			ProcessInitializeOnLoadMethodAttributes (98ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.369 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.206 seconds
+Domain Reload Profiling: 2565ms
+	BeginReloadAssembly (279ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (38ms)
+	RebuildCommonClasses (74ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (103ms)
+	LoadAllAssembliesAndSetupDomain (884ms)
+		LoadAssemblies (653ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (391ms)
+			TypeCache.Refresh (341ms)
+				TypeCache.ScanAssembly (312ms)
+			ScanForSourceGeneratedMonoScriptInfo (36ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (1207ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (896ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (39ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (126ms)
+			ProcessInitializeOnLoadAttributes (660ms)
+			ProcessInitializeOnLoadMethodAttributes (47ms)
+			AfterProcessingInitializeOnLoad (19ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 18.98 ms, found 6 plugins.
+Preloading 2 native plugins for Editor in 0.32 ms.
+Unloading 3722 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (92.0 KB). Loaded Objects now: 4528.
+Memory consumption went from 146.0 MB to 145.9 MB.
+Total: 9.911400 ms (FindLiveObjects: 1.063400 ms CreateObjectMapping: 0.457400 ms MarkObjects: 8.131000 ms  DeleteObjects: 0.257400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 16965.754472 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Models/FBX format/building-type-u.fbx
+  artifactKey: Guid(f90e76c72471b414bb2efcf466abd29e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Models/FBX format/building-type-u.fbx using Guid(f90e76c72471b414bb2efcf466abd29e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '599e5a0af76ed11b026975bebb00f032') in 0.278666 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Models/FBX format/driveway-short.fbx
+  artifactKey: Guid(e4bc58b49bb527e40b88fcdad585808a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Models/FBX format/driveway-short.fbx using Guid(e4bc58b49bb527e40b88fcdad585808a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'cbfec0add7c570adb058fb13f922a840') in 0.024726 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Models/FBX format/fence-1x4.fbx
+  artifactKey: Guid(f56b5bdd51a707742b0559ddc9100eb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Models/FBX format/fence-1x4.fbx using Guid(f56b5bdd51a707742b0559ddc9100eb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'de6ac7d7aebef7b6a69908722922b967') in 0.026820 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Models/FBX format/fence-2x2.fbx
+  artifactKey: Guid(8814efac724a9074c9d1b83d821cce6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Models/FBX format/fence-2x2.fbx using Guid(8814efac724a9074c9d1b83d821cce6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8f28913361b48c5c6ec002704ec294d2') in 0.025503 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Models/FBX format/building-type-p.fbx
+  artifactKey: Guid(4aa2c60b58fa42d4ba7915a568be2224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Models/FBX format/building-type-p.fbx using Guid(4aa2c60b58fa42d4ba7915a568be2224) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '87a8dff7ce0dc158e55593c11a6fe6ff') in 0.027456 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Models/FBX format/building-type-m.fbx
+  artifactKey: Guid(de5a09f25d0cb3d4ea7c5e2f29669189) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Models/FBX format/building-type-m.fbx using Guid(de5a09f25d0cb3d4ea7c5e2f29669189) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'de5fc79c833a73eb1a79e7ee4176db77') in 0.029725 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Models/FBX format/fence-1x2.fbx
+  artifactKey: Guid(cc3e3402ed5eae74b9707a2143d09f91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Models/FBX format/fence-1x2.fbx using Guid(cc3e3402ed5eae74b9707a2143d09f91) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '5dfb0e50c371ec1a1ef732f987bb06c1') in 0.025999 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Preview (Variation A).png
+  artifactKey: Guid(40e38f9c5e7c59d44b6b332ba37c26d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Preview (Variation A).png using Guid(40e38f9c5e7c59d44b6b332ba37c26d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'df7cb81bf7c529cb8dc639745a4186dd') in 0.045266 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Models/FBX format/fence-2x3.fbx
+  artifactKey: Guid(5d565d1014948094ab43fb0e532a9cfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Models/FBX format/fence-2x3.fbx using Guid(5d565d1014948094ab43fb0e532a9cfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '0ca201a4fd817152a53569ee50e31d3e') in 0.027100 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Preview.png
+  artifactKey: Guid(48b309e4c168bcf42aec24b9280f7717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Preview.png using Guid(48b309e4c168bcf42aec24b9280f7717) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '017405a4e3521a1ef2ae2de4df07a3ec') in 0.017480 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Models/FBX format/building-type-k.fbx
+  artifactKey: Guid(c8a1eac693cf14b4ab6ae7fa25bf997a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Models/FBX format/building-type-k.fbx using Guid(c8a1eac693cf14b4ab6ae7fa25bf997a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '115f55eff9cec79e9061628e21660c04') in 0.026680 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Models/FBX format/fence.fbx
+  artifactKey: Guid(05422882959cd3247b5d2942f2ea2833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Models/FBX format/fence.fbx using Guid(05422882959cd3247b5d2942f2ea2833) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '6ea97bd65a47e7e61a7372bd97faf7ed') in 0.026677 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Models/FBX format/building-type-r.fbx
+  artifactKey: Guid(20f1d59743f23f04a87361542ed2a42d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Models/FBX format/building-type-r.fbx using Guid(20f1d59743f23f04a87361542ed2a42d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '97eb96b585e35eddb0865928ffd0c8f6') in 0.029175 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Models/FBX format/building-type-l.fbx
+  artifactKey: Guid(6d36710f39a94914781cac4b0d15253c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Models/FBX format/building-type-l.fbx using Guid(6d36710f39a94914781cac4b0d15253c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8aedb611058183b12707662999a4c3ec') in 0.028818 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Models/FBX format/building-type-s.fbx
+  artifactKey: Guid(922b7e4c805a8214da4e1701f9076ceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Models/FBX format/building-type-s.fbx using Guid(922b7e4c805a8214da4e1701f9076ceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'b9182b4c8fcdb1a16042f3db0f585b92') in 0.029442 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Models/FBX format/building-type-d.fbx
+  artifactKey: Guid(cb63823035e28c64799eb3090a1d2d38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Models/FBX format/building-type-d.fbx using Guid(cb63823035e28c64799eb3090a1d2d38) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '79a9701213afb0aaa9722775f7f52f1a') in 0.030635 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Models/FBX format/driveway-long.fbx
+  artifactKey: Guid(9035831c3fc86fd47bca13a11162e117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Models/FBX format/driveway-long.fbx using Guid(9035831c3fc86fd47bca13a11162e117) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '2a8ea66e72b78253f2ed690664135de9') in 0.024657 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Models/FBX format/building-type-i.fbx
+  artifactKey: Guid(ee835e814b380eb46b27ed151c0776b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Models/FBX format/building-type-i.fbx using Guid(ee835e814b380eb46b27ed151c0776b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'de961018c1d585dd1809414ad28c4158') in 0.026835 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Models/FBX format/building-type-h.fbx
+  artifactKey: Guid(47a4203ea7eed0d45928b121749407f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Models/FBX format/building-type-h.fbx using Guid(47a4203ea7eed0d45928b121749407f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'f3d2fc52ef807a1838fd35513e2d53f0') in 0.027179 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/City
+  artifactKey: Guid(84262a42fc0e3384bbb405bc1e0e13e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City using Guid(84262a42fc0e3384bbb405bc1e0e13e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '20f594ff8b3fb35dd71ecf9c7e47c667') in 0.000988 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Models/FBX format/building-type-q.fbx
+  artifactKey: Guid(43b7ad4b9c5f35f46bfe9d591a079ce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Models/FBX format/building-type-q.fbx using Guid(43b7ad4b9c5f35f46bfe9d591a079ce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '2ab569cae3018dbbdf3183efb8debbee') in 0.026279 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Models/FBX format
+  artifactKey: Guid(838e08c36dfe6944e85bc24c4dc520a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Models/FBX format using Guid(838e08c36dfe6944e85bc24c4dc520a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '07f207151eeb2f220114b7f86a1e33aa') in 0.000740 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Models/FBX format/building-type-e.fbx
+  artifactKey: Guid(1f16ed705895a7f499782a26b0afd5dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Models/FBX format/building-type-e.fbx using Guid(1f16ed705895a7f499782a26b0afd5dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'abccf4119bbe49044eea329d42958aa6') in 0.030455 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Preview (Variation B).png
+  artifactKey: Guid(eaa8a13c71445d24d8fbcb9d5a7c3cc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Preview (Variation B).png using Guid(eaa8a13c71445d24d8fbcb9d5a7c3cc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'c9f2345ea5668c469f06fd70cdab2112') in 0.016618 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Models/FBX format/path-long.fbx
+  artifactKey: Guid(a571033cf85cfa345be703ddecebadfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Models/FBX format/path-long.fbx using Guid(a571033cf85cfa345be703ddecebadfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'be2df5ffedc6f8ea38acc2424d93522d') in 0.026579 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Models/FBX format/tree-large.fbx
+  artifactKey: Guid(231e26b61fd0aa345b4ab42891dcde45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Models/FBX format/tree-large.fbx using Guid(231e26b61fd0aa345b4ab42891dcde45) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '604b3276d0032f57249e9cf92ce52cd6') in 0.023985 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 503.486436 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Models/Materials
+  artifactKey: Guid(db9d3ba30814fb1448f80ea0fa648463) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Models/Materials using Guid(db9d3ba30814fb1448f80ea0fa648463) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '03dff4790b39786545263574ec80083f') in 0.000985 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.097321 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Models/Materials/variation-a.mat
+  artifactKey: Guid(b51d37abfbf85904d81b2b252597b134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Models/Materials/variation-a.mat using Guid(b51d37abfbf85904d81b2b252597b134) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '6b6e1ac5b51427dea64e426d4dcbcd2c') in 0.019034 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Models/Materials/variation-c.mat
+  artifactKey: Guid(814594079dc6eae4f845316fec9137dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Models/Materials/variation-c.mat using Guid(814594079dc6eae4f845316fec9137dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'b305e6534e6847990b031129ae058e23') in 0.013756 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 57.763908 seconds.
+  path: Assets/City/kenney_city-kit-industrial_1.0
+  artifactKey: Guid(95fbb7a5e07b072498393aa22a97e69c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-industrial_1.0 using Guid(95fbb7a5e07b072498393aa22a97e69c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '10a3cc3885158d283bf2a29b7ed859fb') in 0.000833 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.120695 seconds.
+  path: Assets/City/kenney_city-kit-industrial_1.0/Preview.png
+  artifactKey: Guid(53f729a750db94041905cdd388e9cbfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-industrial_1.0/Preview.png using Guid(53f729a750db94041905cdd388e9cbfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '7d30f9b6b9b96b2afca164835bac62bf') in 0.020388 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000347 seconds.
+  path: Assets/City/kenney_city-kit-industrial_1.0/Preview (Variation C).png
+  artifactKey: Guid(dc85e2b78764e5144ae877233688fec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-industrial_1.0/Preview (Variation C).png using Guid(dc85e2b78764e5144ae877233688fec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '03e95d292d6305869170903eb7b982df') in 0.015903 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/City/kenney_city-kit-industrial_1.0/Preview (Variation B).png
+  artifactKey: Guid(72b601a2bf847a2488e34b3b659db0ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-industrial_1.0/Preview (Variation B).png using Guid(72b601a2bf847a2488e34b3b659db0ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'db8a946a87977a0c2ae02509cea99b7c') in 0.014438 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 19.572155 seconds.
+  path: Assets/City/kenney_city-kit-industrial_1.0/Models/FBX format/building-b.fbx
+  artifactKey: Guid(8dc38e3f696dc4444b3566271b4e3f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-industrial_1.0/Models/FBX format/building-b.fbx using Guid(8dc38e3f696dc4444b3566271b4e3f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '27c286221f02bab218ad8935e08ede38') in 0.033587 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/City/kenney_city-kit-industrial_1.0/Models/FBX format/building-q.fbx
+  artifactKey: Guid(28e29bf77145e5a4a83744289b221d8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-industrial_1.0/Models/FBX format/building-q.fbx using Guid(28e29bf77145e5a4a83744289b221d8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'b6c64c9d6f9d7117cabc9007b9eac780') in 0.028442 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/City/kenney_city-kit-industrial_1.0/Models/FBX format/building-o.fbx
+  artifactKey: Guid(f113a782ff48c1947841289dcca6ba0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-industrial_1.0/Models/FBX format/building-o.fbx using Guid(f113a782ff48c1947841289dcca6ba0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '379cde7d2c6894554724dcf46fdf2f80') in 0.028355 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/City/kenney_city-kit-industrial_1.0/Models/FBX format/building-h.fbx
+  artifactKey: Guid(b5f2751fbfbb35d4a987a485ba315e37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-industrial_1.0/Models/FBX format/building-h.fbx using Guid(b5f2751fbfbb35d4a987a485ba315e37) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '0e1731c1da2d2518fab787304bdca23a') in 0.027807 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/City/kenney_city-kit-industrial_1.0/Models/FBX format/building-d.fbx
+  artifactKey: Guid(d00bacfd200992942bb634405abfb25d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-industrial_1.0/Models/FBX format/building-d.fbx using Guid(d00bacfd200992942bb634405abfb25d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'e82186b268fc375415cd133ca8e8d4d3') in 0.029895 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/City/kenney_city-kit-industrial_1.0/Models/FBX format/building-f.fbx
+  artifactKey: Guid(c84a5fc7be8f438409841b83d0807339) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-industrial_1.0/Models/FBX format/building-f.fbx using Guid(c84a5fc7be8f438409841b83d0807339) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '7fe64f1eef51e0486283a0cf511fe8fc') in 0.030080 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/City/kenney_city-kit-industrial_1.0/Models/FBX format/building-n.fbx
+  artifactKey: Guid(794569894922bd946b5417e8ca4831f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-industrial_1.0/Models/FBX format/building-n.fbx using Guid(794569894922bd946b5417e8ca4831f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '1fb9fe80fdb38b06c9eae89b7d5988e0') in 0.028291 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/City/kenney_city-kit-industrial_1.0/Models/FBX format/building-s.fbx
+  artifactKey: Guid(c8f94d97610a67a4abcd0c591bda37c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-industrial_1.0/Models/FBX format/building-s.fbx using Guid(c8f94d97610a67a4abcd0c591bda37c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'e8186dd32fac0563784ef6bb05910a1e') in 0.028866 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/City/kenney_city-kit-industrial_1.0/Models/FBX format/chimney-small.fbx
+  artifactKey: Guid(e9045e9c71f21ed4cbeb26ad1bd6a20f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-industrial_1.0/Models/FBX format/chimney-small.fbx using Guid(e9045e9c71f21ed4cbeb26ad1bd6a20f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'c2fb85805a51ff48d1a79b7e3cd54171') in 0.027984 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/City/kenney_city-kit-industrial_1.0/Models/FBX format/chimney-large.fbx
+  artifactKey: Guid(e675beca8e89f734bbbabbbe9b48c639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-industrial_1.0/Models/FBX format/chimney-large.fbx using Guid(e675beca8e89f734bbbabbbe9b48c639) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '9c202c3d46cf7150e7d9b2d94fb6882c') in 0.026650 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/City/kenney_city-kit-industrial_1.0/Models/FBX format/building-g.fbx
+  artifactKey: Guid(53b0a8ca7506c8a41aed5a927833d504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-industrial_1.0/Models/FBX format/building-g.fbx using Guid(53b0a8ca7506c8a41aed5a927833d504) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '1ddaabefa50cb90950c9276626af3b12') in 0.025459 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
