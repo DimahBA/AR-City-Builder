@@ -220,9 +220,9 @@ Transform:
   m_GameObject: {fileID: 41913168}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.70710576, z: -0, w: 0.70710784}
-  m_LocalPosition: {x: 1.4999995, y: 0, z: -1.2499999}
-  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
-  m_ConstrainProportionsScale: 1
+  m_LocalPosition: {x: 1.4999995, y: 0, z: -1.09}
+  m_LocalScale: {x: 0.5, y: 0.75, z: 0.75}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 623096482}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
@@ -349,11 +349,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 623096482}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: b57735580543db24aa523e60d676f84b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.059550345
+      value: -1.6795504
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b57735580543db24aa523e60d676f84b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -361,7 +361,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b57735580543db24aa523e60d676f84b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.0699687
+      value: -2.7600312
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b57735580543db24aa523e60d676f84b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -369,7 +369,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b57735580543db24aa523e60d676f84b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b57735580543db24aa523e60d676f84b, type: 3}
       propertyPath: m_LocalRotation.y
@@ -701,7 +701,7 @@ GameObject:
   - component: {fileID: 288439804}
   - component: {fileID: 288439803}
   - component: {fileID: 288439802}
-  - component: {fileID: 288439801}
+  - component: {fileID: 288439807}
   m_Layer: 0
   m_Name: FactoryTargetOrange
   m_TagString: Building
@@ -709,25 +709,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &288439801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 288439800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 288439805}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: orange_factory
-  mDatasetName: Vuforia/CityBuilderImageTargets.xml
-  mCastedBehaviour: {fileID: 288439805}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &288439802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -753,8 +734,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d29afa6b0b2a3649a0018673865cc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacencyDistance: 1.3
-  minDistanceFromRoad: 0.7
+  adjacencyDistance: 0.98
+  minDistanceFromRoad: 0.56
   validPlacementColor: {r: 1, g: 1, b: 1, a: 1}
   notNearRoadColor: {r: 1, g: 0.5, b: 0, a: 1}
   cannotAffordColor: {r: 1, g: 0, b: 0, a: 1}
@@ -817,18 +798,18 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: orange_factory
+  mTrackableName: Factory_2
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/CityBuilderImageTargets.xml
-  mAspectRatio: 1
+  mAspectRatio: 0.828571
   mImageTargetType: 0
   mWidth: 1
-  mHeight: 1
+  mHeight: 0.828571
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 288439801}
+  mPreview: {fileID: 288439807}
 --- !u!4 &288439806
 Transform:
   m_ObjectHideFlags: 0
@@ -845,6 +826,30 @@ Transform:
   - {fileID: 489485694}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &288439807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288439800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 288439805}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Factory_2
+  mDatasetName: Vuforia/CityBuilderImageTargets.xml
+  mCastedBehaviour: {fileID: 288439805}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!4 &302054125 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 211e717005a9c474da25373ed159514e, type: 3}
+  m_PrefabInstance: {fileID: 1581843709}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &306768547
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -989,17 +994,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5cd7112d9f9be04c98dcd81a5e6df1b, type: 3}
   m_PrefabInstance: {fileID: 316011561}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &316160509 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b57735580543db24aa523e60d676f84b, type: 3}
+  m_PrefabInstance: {fileID: 74475384}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &335053183
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 623096482}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 5852855a92785b7438dfb8a6e6f1fe1d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2
+      value: 0.37999994
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5852855a92785b7438dfb8a6e6f1fe1d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1007,7 +1017,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5852855a92785b7438dfb8a6e6f1fe1d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.94
+      value: -0.88999975
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5852855a92785b7438dfb8a6e6f1fe1d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1015,7 +1025,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5852855a92785b7438dfb8a6e6f1fe1d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5852855a92785b7438dfb8a6e6f1fe1d, type: 3}
       propertyPath: m_LocalRotation.y
@@ -1135,7 +1145,7 @@ Transform:
   m_GameObject: {fileID: 354312384}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1.4999995, y: 0, z: -2}
+  m_LocalPosition: {x: 1.4999995, y: 0, z: -1.69}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1265,7 +1275,7 @@ GameObject:
   - component: {fileID: 372790703}
   - component: {fileID: 372790702}
   - component: {fileID: 372790701}
-  - component: {fileID: 372790700}
+  - component: {fileID: 372790706}
   m_Layer: 0
   m_Name: FactoryTargetBlue
   m_TagString: Building
@@ -1273,25 +1283,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &372790700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 372790699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 372790704}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: blue_factory
-  mDatasetName: Vuforia/CityBuilderImageTargets.xml
-  mCastedBehaviour: {fileID: 372790704}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &372790701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1317,8 +1308,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d29afa6b0b2a3649a0018673865cc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacencyDistance: 1.3
-  minDistanceFromRoad: 0.7
+  adjacencyDistance: 0.98
+  minDistanceFromRoad: 0.56
   validPlacementColor: {r: 1, g: 1, b: 1, a: 1}
   notNearRoadColor: {r: 1, g: 0.5, b: 0, a: 1}
   cannotAffordColor: {r: 1, g: 0, b: 0, a: 1}
@@ -1381,18 +1372,18 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: blue_factory
+  mTrackableName: Factory_3
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/CityBuilderImageTargets.xml
-  mAspectRatio: 1
+  mAspectRatio: 0.828571
   mImageTargetType: 0
   mWidth: 1
-  mHeight: 1
+  mHeight: 0.828571
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 372790700}
+  mPreview: {fileID: 372790706}
 --- !u!4 &372790705
 Transform:
   m_ObjectHideFlags: 0
@@ -1409,6 +1400,25 @@ Transform:
   - {fileID: 920949717}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &372790706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372790699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 372790704}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Factory_3
+  mDatasetName: Vuforia/CityBuilderImageTargets.xml
+  mCastedBehaviour: {fileID: 372790704}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &390256598
 GameObject:
   m_ObjectHideFlags: 0
@@ -1705,9 +1715,9 @@ Transform:
   m_GameObject: {fileID: 471463599}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.70710576, z: -0, w: 0.70710784}
-  m_LocalPosition: {x: 1.4999995, y: 0, z: -2.75}
-  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
-  m_ConstrainProportionsScale: 1
+  m_LocalPosition: {x: 1.4999995, y: 0, z: -2.6}
+  m_LocalScale: {x: 1.1, y: 0.75, z: 0.75}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 623096482}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
@@ -2028,8 +2038,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d29afa6b0b2a3649a0018673865cc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacencyDistance: 0.7
-  minDistanceFromRoad: 0.43
+  adjacencyDistance: 0.98
+  minDistanceFromRoad: 0.56
   validPlacementColor: {r: 1, g: 1, b: 1, a: 1}
   notNearRoadColor: {r: 1, g: 0.5, b: 0, a: 1}
   cannotAffordColor: {r: 1, g: 0, b: 0, a: 1}
@@ -2092,13 +2102,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: blue_house
+  mTrackableName: House_3
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/CityBuilderImageTargets.xml
-  mAspectRatio: 1.00722
+  mAspectRatio: 0.828571
   mImageTargetType: 0
   mWidth: 1
-  mHeight: 1.00722
+  mHeight: 0.828571
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -2134,7 +2144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 493842255}
   mHiddenRoot: {fileID: 0}
-  mTargetName: blue_house
+  mTargetName: House_3
   mDatasetName: Vuforia/CityBuilderImageTargets.xml
   mCastedBehaviour: {fileID: 493842255}
   mMeshFilter: {fileID: 0}
@@ -2655,8 +2665,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.71, y: 0, z: 0.63}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.2000002, y: 1.2000002, z: 1.2000002}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8312976954409196224}
   - {fileID: 1950954889}
@@ -2743,6 +2753,10 @@ Transform:
   - {fileID: 2062086685}
   - {fileID: 1497361783}
   - {fileID: 1337261109}
+  - {fileID: 946958223}
+  - {fileID: 2108818949}
+  - {fileID: 302054125}
+  - {fileID: 316160509}
   m_Father: {fileID: 2023371380}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &633862562
@@ -3791,7 +3805,7 @@ Transform:
   m_GameObject: {fileID: 932527525}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7500005, y: 0, z: -2}
+  m_LocalPosition: {x: -0.7500005, y: 0, z: -1.6899998}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -3930,6 +3944,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 946637557}
   m_Mesh: {fileID: 114778512065557776, guid: dfcf2d59e95610b4ba170ea88086bae8, type: 3}
+--- !u!4 &946958223 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5852855a92785b7438dfb8a6e6f1fe1d, type: 3}
+  m_PrefabInstance: {fileID: 335053183}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &969610086 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: abb08a42bf6454448beb6026d6e79149, type: 3}
@@ -4827,8 +4846,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d29afa6b0b2a3649a0018673865cc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacencyDistance: 1.3
-  minDistanceFromRoad: 0.7
+  adjacencyDistance: 0.98
+  minDistanceFromRoad: 0.56
   validPlacementColor: {r: 1, g: 1, b: 1, a: 1}
   notNearRoadColor: {r: 1, g: 0.5, b: 0, a: 1}
   cannotAffordColor: {r: 1, g: 0, b: 0, a: 1}
@@ -4891,13 +4910,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: purple_house
+  mTrackableName: House_5
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/CityBuilderImageTargets.xml
-  mAspectRatio: 0.961872
+  mAspectRatio: 0.828571
   mImageTargetType: 0
   mWidth: 1
-  mHeight: 0.961872
+  mHeight: 0.828571
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -4933,7 +4952,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1314837887}
   mHiddenRoot: {fileID: 0}
-  mTargetName: purple_house
+  mTargetName: House_5
   mDatasetName: Vuforia/CityBuilderImageTargets.xml
   mCastedBehaviour: {fileID: 1314837887}
   mMeshFilter: {fileID: 0}
@@ -5129,8 +5148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d29afa6b0b2a3649a0018673865cc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacencyDistance: 1.3
-  minDistanceFromRoad: 0.7
+  adjacencyDistance: 0.98
+  minDistanceFromRoad: 0.56
   validPlacementColor: {r: 1, g: 1, b: 1, a: 1}
   notNearRoadColor: {r: 1, g: 0.5, b: 0, a: 1}
   cannotAffordColor: {r: 1, g: 0, b: 0, a: 1}
@@ -5193,13 +5212,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: brown_house
+  mTrackableName: House_2
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/CityBuilderImageTargets.xml
-  mAspectRatio: 0.981917
+  mAspectRatio: 0.828571
   mImageTargetType: 0
   mWidth: 1
-  mHeight: 0.981917
+  mHeight: 0.828571
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -5235,7 +5254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1370637785}
   mHiddenRoot: {fileID: 0}
-  mTargetName: brown_house
+  mTargetName: House_2
   mDatasetName: Vuforia/CityBuilderImageTargets.xml
   mCastedBehaviour: {fileID: 1370637785}
   mMeshFilter: {fileID: 0}
@@ -5534,19 +5553,19 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 623096482}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 211e717005a9c474da25373ed159514e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.21999985
+      value: -1.4000001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 211e717005a9c474da25373ed159514e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.1591686e-18
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 211e717005a9c474da25373ed159514e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.37
+      value: -3.46
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 211e717005a9c474da25373ed159514e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5554,7 +5573,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 211e717005a9c474da25373ed159514e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 211e717005a9c474da25373ed159514e, type: 3}
       propertyPath: m_LocalRotation.y
@@ -5562,7 +5581,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 211e717005a9c474da25373ed159514e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 211e717005a9c474da25373ed159514e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5665,7 +5684,7 @@ GameObject:
   - component: {fileID: 1619656610}
   - component: {fileID: 1619656609}
   - component: {fileID: 1619656608}
-  - component: {fileID: 1619656607}
+  - component: {fileID: 1619656613}
   m_Layer: 0
   m_Name: CommercialTargetBlue
   m_TagString: Untagged
@@ -5673,25 +5692,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1619656607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1619656606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1619656611}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: blue_mall
-  mDatasetName: Vuforia/CityBuilderImageTargets.xml
-  mCastedBehaviour: {fileID: 1619656611}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1619656608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5704,8 +5704,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d29afa6b0b2a3649a0018673865cc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacencyDistance: 1.3
-  minDistanceFromRoad: 0.7
+  adjacencyDistance: 0.98
+  minDistanceFromRoad: 0.56
   validPlacementColor: {r: 1, g: 1, b: 1, a: 1}
   notNearRoadColor: {r: 1, g: 0.5, b: 0, a: 1}
   cannotAffordColor: {r: 1, g: 0, b: 0, a: 1}
@@ -5781,18 +5781,18 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: blue_mall
+  mTrackableName: Mall_2
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/CityBuilderImageTargets.xml
-  mAspectRatio: 0.996396
+  mAspectRatio: 0.828571
   mImageTargetType: 0
   mWidth: 1
-  mHeight: 0.996396
+  mHeight: 0.828571
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1619656607}
+  mPreview: {fileID: 1619656613}
 --- !u!4 &1619656612
 Transform:
   m_ObjectHideFlags: 0
@@ -5809,6 +5809,25 @@ Transform:
   - {fileID: 211276669}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1619656613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619656606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1619656611}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Mall_2
+  mDatasetName: Vuforia/CityBuilderImageTargets.xml
+  mCastedBehaviour: {fileID: 1619656611}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1001 &1622368354
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5932,8 +5951,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d29afa6b0b2a3649a0018673865cc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacencyDistance: 1.3
-  minDistanceFromRoad: 0.7
+  adjacencyDistance: 0.98
+  minDistanceFromRoad: 0.56
   validPlacementColor: {r: 1, g: 1, b: 1, a: 1}
   notNearRoadColor: {r: 1, g: 0.5, b: 0, a: 1}
   cannotAffordColor: {r: 1, g: 0, b: 0, a: 1}
@@ -5996,13 +6015,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: green_house
+  mTrackableName: House_4
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/CityBuilderImageTargets.xml
-  mAspectRatio: 1
+  mAspectRatio: 0.828571
   mImageTargetType: 0
   mWidth: 1
-  mHeight: 1
+  mHeight: 0.828571
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -6038,7 +6057,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1635651901}
   mHiddenRoot: {fileID: 0}
-  mTargetName: green_house
+  mTargetName: House_4
   mDatasetName: Vuforia/CityBuilderImageTargets.xml
   mCastedBehaviour: {fileID: 1635651901}
   mMeshFilter: {fileID: 0}
@@ -6282,8 +6301,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d29afa6b0b2a3649a0018673865cc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacencyDistance: 1.3
-  minDistanceFromRoad: 0.7
+  adjacencyDistance: 0.98
+  minDistanceFromRoad: 0.56
   validPlacementColor: {r: 1, g: 1, b: 1, a: 1}
   notNearRoadColor: {r: 1, g: 0.5, b: 0, a: 1}
   cannotAffordColor: {r: 1, g: 0, b: 0, a: 1}
@@ -6359,13 +6378,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: orange_mall
+  mTrackableName: Mall_1
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/CityBuilderImageTargets.xml
-  mAspectRatio: 0.996383
+  mAspectRatio: 1
   mImageTargetType: 0
   mWidth: 1
-  mHeight: 0.996383
+  mHeight: 1
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -6401,7 +6420,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1676622228}
   mHiddenRoot: {fileID: 0}
-  mTargetName: orange_mall
+  mTargetName: Mall_1
   mDatasetName: Vuforia/CityBuilderImageTargets.xml
   mCastedBehaviour: {fileID: 1676622228}
   mMeshFilter: {fileID: 0}
@@ -6433,9 +6452,9 @@ Transform:
   m_GameObject: {fileID: 1677848432}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.70710576, z: -0, w: 0.70710784}
-  m_LocalPosition: {x: -0.7500005, y: 0, z: -1.2499999}
-  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
-  m_ConstrainProportionsScale: 1
+  m_LocalPosition: {x: -0.7500005, y: 0, z: -1.0899998}
+  m_LocalScale: {x: 0.5, y: 0.75, z: 0.75}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 623096482}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
@@ -6853,19 +6872,19 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 623096482}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: a2b6042c898d40d46853abd1074a00df, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.1612091
+      value: -1.7812092
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a2b6042c898d40d46853abd1074a00df, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.7071676e-16
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a2b6042c898d40d46853abd1074a00df, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.253556
+      value: 2.4235563
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a2b6042c898d40d46853abd1074a00df, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6873,7 +6892,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a2b6042c898d40d46853abd1074a00df, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a2b6042c898d40d46853abd1074a00df, type: 3}
       propertyPath: m_LocalRotation.y
@@ -6989,13 +7008,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: brown_factory
+  mTrackableName: Factory_1
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/CityBuilderImageTargets.xml
-  mAspectRatio: 0.996383
+  mAspectRatio: 0.828571
   mImageTargetType: 0
   mWidth: 1
-  mHeight: 0.996383
+  mHeight: 0.828571
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -7029,8 +7048,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d29afa6b0b2a3649a0018673865cc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacencyDistance: 1.3
-  minDistanceFromRoad: 0.7
+  adjacencyDistance: 0.98
+  minDistanceFromRoad: 0.56
   validPlacementColor: {r: 1, g: 1, b: 1, a: 1}
   notNearRoadColor: {r: 1, g: 0.5, b: 0, a: 1}
   cannotAffordColor: {r: 1, g: 0, b: 0, a: 1}
@@ -7061,7 +7080,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1795591985}
   mHiddenRoot: {fileID: 0}
-  mTargetName: brown_factory
+  mTargetName: Factory_1
   mDatasetName: Vuforia/CityBuilderImageTargets.xml
   mCastedBehaviour: {fileID: 1795591985}
   mMeshFilter: {fileID: 0}
@@ -7079,7 +7098,7 @@ GameObject:
   - component: {fileID: 1801169433}
   - component: {fileID: 1801169432}
   - component: {fileID: 1801169431}
-  - component: {fileID: 1801169430}
+  - component: {fileID: 1801169436}
   m_Layer: 0
   m_Name: CommercialTargetGreen
   m_TagString: Untagged
@@ -7087,25 +7106,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1801169430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801169429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1801169434}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: green_mall
-  mDatasetName: Vuforia/CityBuilderImageTargets.xml
-  mCastedBehaviour: {fileID: 1801169434}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1801169431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7118,8 +7118,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d29afa6b0b2a3649a0018673865cc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacencyDistance: 1.3
-  minDistanceFromRoad: 0.7
+  adjacencyDistance: 0.98
+  minDistanceFromRoad: 0.56
   validPlacementColor: {r: 1, g: 1, b: 1, a: 1}
   notNearRoadColor: {r: 1, g: 0.5, b: 0, a: 1}
   cannotAffordColor: {r: 1, g: 0, b: 0, a: 1}
@@ -7195,18 +7195,18 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: green_mall
+  mTrackableName: Mall_3
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/CityBuilderImageTargets.xml
-  mAspectRatio: 1
+  mAspectRatio: 0.828571
   mImageTargetType: 0
   mWidth: 1
-  mHeight: 1
+  mHeight: 0.828571
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1801169430}
+  mPreview: {fileID: 1801169436}
 --- !u!4 &1801169435
 Transform:
   m_ObjectHideFlags: 0
@@ -7223,6 +7223,25 @@ Transform:
   - {fileID: 524166904}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1801169436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801169429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1801169434}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Mall_3
+  mDatasetName: Vuforia/CityBuilderImageTargets.xml
+  mCastedBehaviour: {fileID: 1801169434}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1807021914
 GameObject:
   m_ObjectHideFlags: 0
@@ -7472,7 +7491,7 @@ Transform:
   m_GameObject: {fileID: 1950954888}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.7499995, y: 0, z: -2}
+  m_LocalPosition: {x: 0.7499995, y: 0, z: -1.6899998}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -7744,7 +7763,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2023371380}
   - component: {fileID: 2023371379}
-  - component: {fileID: 2023371378}
+  - component: {fileID: 2023371382}
   - component: {fileID: 2023371381}
   m_Layer: 0
   m_Name: CityTarget
@@ -7753,7 +7772,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2023371378
+--- !u!114 &2023371379
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7762,10 +7781,53 @@ MonoBehaviour:
   m_GameObject: {fileID: 2023371377}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 886328de6a5c14cbb85854fdf1a5085b, type: 3}
+  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StatusFilter: 1
+  PreviewVisible: 1
+  RuntimeOcclusion: 0
+  RuntimeCollider: 0
+  mTrackableName: city
+  mInitializedInEditor: 1
+  mDataSetPath: Vuforia/CityBuilderImageTargets.xml
+  mAspectRatio: 1
+  mImageTargetType: 0
+  mWidth: 1
+  mHeight: 1
+  mRuntimeTexture: {fileID: 0}
+  mMotionHint: 1
+  mTrackingOptimization: 0
+  mTrackingOptimizationNeedsUpgrade: 0
+  mPreview: {fileID: 2023371382}
+--- !u!4 &2023371380
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023371377}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.91, y: 0, z: 6.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 623096482}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2023371381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023371377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53fe1e718bb15ed4bae1e03c1dcba303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StatusFilter: 0
   UsePoseSmoothing: 0
   AnimationCurve:
     serializedVersion: 2
@@ -7797,50 +7859,7 @@ MonoBehaviour:
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &2023371379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2023371377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PreviewVisible: 1
-  RuntimeOcclusion: 0
-  RuntimeCollider: 0
-  mTrackableName: city
-  mInitializedInEditor: 1
-  mDataSetPath: Vuforia/CityBuilderImageTargets.xml
-  mAspectRatio: 1
-  mImageTargetType: 0
-  mWidth: 1
-  mHeight: 1
-  mRuntimeTexture: {fileID: 0}
-  mMotionHint: 1
-  mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 2023371381}
---- !u!4 &2023371380
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2023371377}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.91, y: 0, z: 6.2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 623096482}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2023371381
+--- !u!114 &2023371382
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7873,6 +7892,7 @@ GameObject:
   - component: {fileID: 2043127977}
   - component: {fileID: 2043127978}
   - component: {fileID: 2043127979}
+  - component: {fileID: 2043127980}
   m_Layer: 0
   m_Name: HouseTargetOrange
   m_TagString: Building
@@ -7939,18 +7959,18 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: orange_house
+  mTrackableName: House_1
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/CityBuilderImageTargets.xml
-  mAspectRatio: 0.996383
+  mAspectRatio: 0.828571
   mImageTargetType: 0
   mWidth: 1
-  mHeight: 0.996383
+  mHeight: 0.828571
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 2043127979}
+  mPreview: {fileID: 2043127980}
 --- !u!4 &2043127976
 Transform:
   m_ObjectHideFlags: 0
@@ -7979,8 +7999,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d29afa6b0b2a3649a0018673865cc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacencyDistance: 1.3
-  minDistanceFromRoad: 0.7
+  adjacencyDistance: 0.98
+  minDistanceFromRoad: 0.56
   validPlacementColor: {r: 1, g: 1, b: 1, a: 1}
   notNearRoadColor: {r: 1, g: 0.5, b: 0, a: 1}
   cannotAffordColor: {r: 1, g: 0, b: 0, a: 1}
@@ -8006,12 +8026,56 @@ MonoBehaviour:
   m_GameObject: {fileID: 2043127973}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 886328de6a5c14cbb85854fdf1a5085b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StatusFilter: 2
+  UsePoseSmoothing: 0
+  AnimationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 3.3333333
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.3
+      value: 1
+      inSlope: 3.3333333
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  OnTargetFound:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTargetLost:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2043127980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043127973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 2043127975}
   mHiddenRoot: {fileID: 0}
-  mTargetName: orange_house
+  mTargetName: House_1
   mDatasetName: Vuforia/CityBuilderImageTargets.xml
   mCastedBehaviour: {fileID: 2043127975}
   mMeshFilter: {fileID: 0}
@@ -8082,6 +8146,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0541c96e3ecb2374daf5c89e762b4906, type: 3}
   m_PrefabInstance: {fileID: 756575149}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2108818949 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a2b6042c898d40d46853abd1074a00df, type: 3}
+  m_PrefabInstance: {fileID: 1789592004}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &2123584745 stripped
 Transform:
@@ -8453,9 +8522,9 @@ Transform:
   m_GameObject: {fileID: 1252832105919749891}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.70710576, z: -0, w: 0.70710784}
-  m_LocalPosition: {x: -3, y: 0, z: -1.25}
-  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
-  m_ConstrainProportionsScale: 1
+  m_LocalPosition: {x: -3, y: 0, z: -1.0899999}
+  m_LocalScale: {x: 0.5, y: 0.75, z: 0.75}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 623096482}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
@@ -9106,7 +9175,7 @@ Transform:
   m_GameObject: {fileID: 7736989285013528108}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.70710576, z: -0, w: 0.70710784}
-  m_LocalPosition: {x: -3, y: 0, z: -2}
+  m_LocalPosition: {x: -3, y: 0, z: -1.6899998}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -9147,9 +9216,9 @@ Transform:
   m_GameObject: {fileID: 7576720769993562485}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.70710576, z: -0, w: 0.70710784}
-  m_LocalPosition: {x: -3, y: 0, z: -2.75}
-  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
-  m_ConstrainProportionsScale: 1
+  m_LocalPosition: {x: -3, y: 0, z: -2.6}
+  m_LocalScale: {x: 1.1, y: 0.75, z: 0.75}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 623096482}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
@@ -9405,7 +9474,7 @@ Transform:
   m_GameObject: {fileID: 8653227782947586170}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -2}
+  m_LocalPosition: {x: 0, y: 0, z: -1.6899998}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -9523,7 +9592,3 @@ SceneRoots:
   - {fileID: 1619656612}
   - {fileID: 1801169435}
   - {fileID: 535241538}
-  - {fileID: 335053183}
-  - {fileID: 1789592004}
-  - {fileID: 1581843709}
-  - {fileID: 74475384}

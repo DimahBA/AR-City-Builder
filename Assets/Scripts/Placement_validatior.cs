@@ -27,8 +27,8 @@ public class BuildingPlacementValidator : MonoBehaviour
     
     void Start()
     {
-        // Get all renderers in the building
-        buildingRenderers = GetComponentsInChildren<Renderer>();
+        // Get all renderers in the building (including inactive children)
+        buildingRenderers = GetComponentsInChildren<Renderer>(includeInactive: true);
         
         // Store original materials
         originalMaterials = new Dictionary<Renderer, Material[]>();
@@ -48,6 +48,7 @@ public class BuildingPlacementValidator : MonoBehaviour
         buildingScript = GetComponent<Building>();
         gameUI = FindObjectOfType<GameUI>();
     }
+
     
     void Update()
     {
