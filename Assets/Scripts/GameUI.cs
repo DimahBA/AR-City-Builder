@@ -22,6 +22,9 @@ public class GameUI : MonoBehaviour
         UpdatePopulationDisplay();
         UpdateDayDisplay();
     }
+
+
+
     
     void UpdateMoneyDisplay()
     {
@@ -52,12 +55,17 @@ public class GameUI : MonoBehaviour
         return currentMoney >= cost;
     }
     
+
+    
+
     public void SpendMoney(int amount)
     {
+        Debug.LogError($"[SPENDING MONEY] Amount: ${amount}");
+        Debug.LogError($"Stack Trace:\n{System.Environment.StackTrace}");
+        
         currentMoney -= amount;
         UpdateMoneyDisplay();
     }
-    
     public void AddMoney(int amount)
     {
         currentMoney += amount;

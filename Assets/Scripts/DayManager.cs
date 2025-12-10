@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class DayManager : MonoBehaviour
@@ -52,12 +53,25 @@ public class DayManager : MonoBehaviour
     void ProcessDayEnd()
     {
         currentDay++;
-        Debug.Log($"=== Day {currentDay} ended ===");
+        Debug.Log($"=== Day {currentDay} started ===");
         
-        // Process commercial buildings
+        // Process systems in order:
+        // 1. Update house happiness based on services/factories
+        if (PopulationManager.Instance != null)
+        {
+            PopulationManager.Instance.UpdateHappiness();
+        }
+        
+        // 2. Update population count (after happiness/abandonment checks)
+        if (PopulationManager.Instance != null)
+        {
+            PopulationManager.Instance.UpdatePopulation();
+        }
+        
+        // 3. Process commercial buildings (still using flat income for now)
         ProcessCommercialBuildings();
         
-        // Update UI with current day
+        // 4. Update UI with current day
         if (gameUI != null)
         {
             gameUI.UpdateDayDisplay(currentDay);
@@ -68,29 +82,44 @@ public class DayManager : MonoBehaviour
     
     void ProcessCommercialBuildings()
     {
-        // Find all commercial buildings that have been paid for
-        Building[] allBuildings = FindObjectsOfType<Building>();
-        int commercialCount = 0;
-        
-        foreach (Building building in allBuildings)
+        if (BuildingManager.Instance == null)
         {
-            // Check if this is a commercial building and has been paid
-            if (building.HasPaid() && building.buildingData != null 
-                && building.buildingData.buildingName.ToLower().Contains("commercial"))
-            {
-                commercialCount++;
-                
-                // Generate income for this commercial building
-                int income = 100;
-                gameUI.AddMoney(income);
-                
-                Debug.Log($"Commercial building generated ${income}");
-            }
+            Debug.LogError("[DayManager] BuildingManager.Instance is NULL! Cannot process buildings.");
+            return;
         }
         
-        if (commercialCount > 0)
+        Debug.Log($"[DayManager] Processing commercial buildings...");
+        
+        // Get all commercial buildings from the registry (much faster than FindObjectsOfType!)
+        List<Building> commercialBuildings = BuildingManager.Instance.GetBuildingsByType(BuildingType.Commercial);
+        
+        Debug.Log($"[DayManager] Found {commercialBuildings.Count} commercial buildings in registry");
+        
+        int totalIncome = 0;
+        
+        foreach (Building building in commercialBuildings)
         {
-            Debug.Log($"Total commercial buildings: {commercialCount}. Total income: ${commercialCount * 100}");
+            if (building == null || building.buildingData == null) 
+            {
+                Debug.LogWarning("[DayManager] Skipping null building or building with null data");
+                continue;
+            }
+            
+            // Generate income for this commercial building
+            int income = building.buildingData.baseIncome;
+            gameUI.AddMoney(income);
+            totalIncome += income;
+            
+            Debug.Log($"[DayManager] {building.buildingData.buildingName} generated ${income}");
+        }
+        
+        if (commercialBuildings.Count > 0)
+        {
+            Debug.Log($"[DayManager] Total commercial buildings: {commercialBuildings.Count}. Total income: ${totalIncome}");
+        }
+        else
+        {
+            Debug.LogWarning("[DayManager] No commercial buildings generating income");
         }
     }
     

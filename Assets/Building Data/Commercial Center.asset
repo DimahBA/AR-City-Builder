@@ -13,5 +13,18 @@ MonoBehaviour:
   m_Name: Commercial Center
   m_EditorClassIdentifier: 
   buildingName: commercial
+  buildingType: 3
   cost: 8000
   description: 
+  housingCapacity: 0
+  dailyOperatingCost: 0
+  happinessBonus: 0
+  serviceRadius: 0
+  dailyMaintenanceCost: 0
+  pollutionPenalty: 0
+  pollutionRadius: 0
+  baseIncome: 100
+  commercialRadius: 6
+  minPopulationThreshold: 5
+  lowHappinessMultiplier: 0.5
+  happinessThreshold: 50

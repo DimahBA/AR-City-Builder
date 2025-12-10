@@ -70,9 +70,9 @@ Happiness is tracked per house and summarizes how livable an area is. It combine
 
 ## Data model and building types
 
-- [ ] Extend `BuildingData` to include building type (House, Service, Factory, Commercial) instead of relying only on `buildingName` text.
+- [x] Extend `BuildingData` to include building type (House, Service, Factory, Commercial) instead of relying only on `buildingName` text.
 
-- [ ] Add per-type parameters: house capacity; service radius and happiness bonus; factory pollution radius and penalty; commercial base income and multipliers.
+- [x] Add per-type parameters: house capacity; service radius and happiness bonus; factory pollution radius and penalty; commercial base income and multipliers.
 
 - [ ] Implement dedicated components or a central system to handle per-type logic (House, ServiceBuilding, FactoryBuilding, CommercialBuilding) rather than string checks.
 

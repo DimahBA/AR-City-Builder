@@ -13,5 +13,18 @@ MonoBehaviour:
   m_Name: Factory
   m_EditorClassIdentifier: 
   buildingName: Factory
+  buildingType: 2
   cost: 10000
   description: 
+  housingCapacity: 0
+  dailyOperatingCost: 0
+  happinessBonus: 0
+  serviceRadius: 0
+  dailyMaintenanceCost: 0
+  pollutionPenalty: 15
+  pollutionRadius: 7
+  baseIncome: 0
+  commercialRadius: 0
+  minPopulationThreshold: 0
+  lowHappinessMultiplier: 0
+  happinessThreshold: 0

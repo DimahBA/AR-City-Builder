@@ -65,9 +65,11 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CustomTrackableEventHandler.cs" />
     <Compile Include="Assets\Scripts\DayManager.cs" />
+    <Compile Include="Assets\Scripts\PopulationManager.cs" />
     <Compile Include="Assets\Scripts\BuildingData.cs" />
     <Compile Include="Assets\Scripts\Building.cs" />
     <Compile Include="Assets\Scripts\GameUI.cs" />
+    <Compile Include="Assets\Scripts\building_manager.cs" />
     <Compile Include="Assets\Scripts\Placement_validatior.cs" />
     <Compile Include="Assets\Scripts\smoothFollower.cs" />
   </ItemGroup>

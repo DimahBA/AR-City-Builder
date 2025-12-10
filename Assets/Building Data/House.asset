@@ -13,5 +13,18 @@ MonoBehaviour:
   m_Name: House
   m_EditorClassIdentifier: 
   buildingName: House
+  buildingType: 0
   cost: 5000
   description: 
+  housingCapacity: 10
+  dailyOperatingCost: 0
+  happinessBonus: 0
+  serviceRadius: 0
+  dailyMaintenanceCost: 0
+  pollutionPenalty: 0
+  pollutionRadius: 0
+  baseIncome: 0
+  commercialRadius: 0
+  minPopulationThreshold: 0
+  lowHappinessMultiplier: 0
+  happinessThreshold: 0
