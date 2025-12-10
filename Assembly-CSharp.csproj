@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CustomTrackableEventHandler.cs" />
     <Compile Include="Assets\Scripts\DayManager.cs" />
+    <Compile Include="Assets\Scripts\HappinessIndicator.cs" />
     <Compile Include="Assets\Scripts\PopulationManager.cs" />
     <Compile Include="Assets\Scripts\BuildingData.cs" />
     <Compile Include="Assets\Scripts\Building.cs" />

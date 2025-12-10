@@ -15,6 +15,10 @@ public class PopulationManager : MonoBehaviour
     [Header("References")]
     public GameUI gameUI;
     
+    [Header("Debug Visualization")]
+    [Tooltip("Show happiness indicators above houses")]
+    public bool showHappinessIndicators = true;
+    
     void Awake()
     {
         if (Instance != null && Instance != this)
@@ -30,6 +34,45 @@ public class PopulationManager : MonoBehaviour
         if (gameUI == null)
         {
             gameUI = FindObjectOfType<GameUI>();
+        }
+        
+        // Enable/disable happiness indicators on all houses
+        ToggleHappinessIndicators(showHappinessIndicators);
+    }
+    
+    /// <summary>
+    /// Enable or disable happiness indicators on all houses
+    /// </summary>
+    public void ToggleHappinessIndicators(bool enable)
+    {
+        if (BuildingManager.Instance == null) return;
+        
+        List<Building> houses = BuildingManager.Instance.GetBuildingsByType(BuildingType.House);
+        
+        foreach (Building house in houses)
+        {
+            if (house == null) continue;
+            
+            HappinessIndicator indicator = house.GetComponent<HappinessIndicator>();
+            
+            if (enable)
+            {
+                if (indicator == null)
+                {
+                    house.gameObject.AddComponent<HappinessIndicator>();
+                }
+                else
+                {
+                    indicator.enabled = true;
+                }
+            }
+            else
+            {
+                if (indicator != null)
+                {
+                    indicator.enabled = false;
+                }
+            }
         }
     }
     
@@ -57,7 +100,7 @@ public class PopulationManager : MonoBehaviour
             
             // Start with base happiness (slowly decay toward 50 if no services/factories)
             float newHappiness = house.GetHappiness();
-            newHappiness = Mathf.Lerp(newHappiness, 50f, 0.1f); // Slow decay to neutral
+            newHappiness = Mathf.Lerp(newHappiness, 50f, 0.6f); // Slow decay to neutral
             
             // Add bonuses from nearby services
             float serviceBonus = 0f;

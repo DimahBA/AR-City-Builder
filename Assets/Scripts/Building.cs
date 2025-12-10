@@ -20,7 +20,7 @@ public class Building : MonoBehaviour
     // Add this to check if we're actually being tracked
     private DefaultObserverEventHandler trackingHandler;
     private bool isTracked = false;
-    
+
     void Start()
     {
         if (buildingData == null)
@@ -91,6 +91,14 @@ public class Building : MonoBehaviour
                 currentPopulation = buildingData.housingCapacity;
                 //happiness = buildingData.baseHappiness;
                 isAbandoned = false;
+                // Add happiness indicator if PopulationManager wants them shown
+                if (PopulationManager.Instance != null && PopulationManager.Instance.showHappinessIndicators)
+                {
+                    if (GetComponent<HappinessIndicator>() == null)
+                    {
+                        gameObject.AddComponent<HappinessIndicator>();
+                    }
+                }
                 Debug.Log($"[Building] House '{buildingData.buildingName}' initialized with {currentPopulation} residents");
             }
             else
