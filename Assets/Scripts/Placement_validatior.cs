@@ -57,41 +57,48 @@ public class BuildingPlacementValidator : MonoBehaviour
     
     void ValidatePlacement()
     {
-        // Find all road objects
         GameObject[] roads = GameObject.FindGameObjectsWithTag("road");
+        
+        //Debug.Log($"Found {roads.Length} roads");
         
         bool nearRoad = false;
         bool collidingWithRoad = false;
         
         if (roads.Length > 0)
         {
-            // Check distance to each road
             foreach (GameObject road in roads)
             {
                 float distance = GetDistanceToRoad(road);
+                //Debug.Log($"Distance to {road.name}: {distance}");
                 
-                // Check if too close (colliding)
                 if (distance < minDistanceFromRoad)
                 {
                     collidingWithRoad = true;
+                    //Debug.Log("Too close to road - colliding!");
                     break;
                 }
                 
-                // Check if within adjacent range
                 if (distance <= adjacencyDistance)
                 {
                     nearRoad = true;
+                    //Debug.Log("Near road - valid!");
                 }
             }
         }
+        else
+        {
+            //Debug.LogWarning("No roads found with tag 'road'!");
+        }
         
-        // Update state
         isNearRoad = nearRoad;
         isPlacementValid = !collidingWithRoad;
         
-        // Apply visual feedback based on state
+        //Debug.Log($"Placement Valid: {isPlacementValid}, Near Road: {isNearRoad}");
+        
         UpdateVisualFeedback();
     }
+
+
     
     void UpdateVisualFeedback()
     {
@@ -155,28 +162,17 @@ public class BuildingPlacementValidator : MonoBehaviour
     
     float GetDistanceToRoad(GameObject road)
     {
-        // Get the closest point on the road's collider
-        Collider roadCollider = road.GetComponent<Collider>();
+        // Simple transform-based distance (doesn't need colliders)
+        Vector3 buildingPos = transform.position;
+        Vector3 roadPos = road.transform.position;
         
-        if (roadCollider != null)
-        {
-            // Get building bounds center
-            Vector3 buildingCenter = GetComponent<Collider>() != null 
-                ? GetComponent<Collider>().bounds.center 
-                : transform.position;
-            
-            // Get closest point on road
-            Vector3 closestPoint = roadCollider.ClosestPoint(buildingCenter);
-            
-            // Calculate distance
-            return Vector3.Distance(buildingCenter, closestPoint);
-        }
-        else
-        {
-            // Fallback to simple distance calculation
-            return Vector3.Distance(transform.position, road.transform.position);
-        }
+        // Only consider XZ plane (ignore height difference)
+        buildingPos.y = 0;
+        roadPos.y = 0;
+        
+        return Vector3.Distance(buildingPos, roadPos);
     }
+
     
     // Public method to check if placement is valid (useful for confirming placement)
     public bool IsPlacementValid()

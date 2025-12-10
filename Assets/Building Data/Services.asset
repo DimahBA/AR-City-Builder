@@ -10,8 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 61fd836ca67f0ef49973d7da40109853, type: 3}
-  m_Name: Commercial Center
+  m_Name: Services
   m_EditorClassIdentifier: 
-  buildingName: commercial
-  cost: 8000
+  buildingName: Services
+  buildingType: 1
+  cost: 0
   description: 
+  maxCapacity: 0
+  costPerDay: 50
+  happinessBonus: 20
+  effectRadius: 8
+  dailyOperatingCost: 0
+  happinessPenalty: 0
+  pollutionRadius: 0
+  baseIncomePerDay: 0
+  commercialRadius: 0
+  minPopulationForIncome: 0
+  optimalPopulation: 0

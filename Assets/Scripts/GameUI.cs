@@ -6,18 +6,21 @@ public class GameUI : MonoBehaviour
     public UIDocument UIDoc;
     private Label moneyLabel;
     private Label populationLabel;
+    private Label dayLabel;
     private int currentMoney = 100000;
     private int currentPopulation = 0;
+    private int currentDay = 0;
     
     private void Start()
     {
         var root = UIDoc.rootVisualElement;
         moneyLabel = root.Q<Label>("MoneyLabel");
         populationLabel = root.Q<Label>("DensityLabel");
+        dayLabel = root.Q<Label>("DayLabel");
 
         UpdateMoneyDisplay();
         UpdatePopulationDisplay();
-
+        UpdateDayDisplay();
     }
     
     void UpdateMoneyDisplay()
@@ -33,6 +36,14 @@ public class GameUI : MonoBehaviour
         if (populationLabel != null)
         {
             populationLabel.text = currentPopulation.ToString("N0");
+        }
+    }
+    
+    void UpdateDayDisplay()
+    {
+        if (dayLabel != null)
+        {
+            dayLabel.text = "Day " + currentDay;
         }
     }
     
@@ -56,5 +67,22 @@ public class GameUI : MonoBehaviour
     public int GetCurrentMoney()
     {
         return currentMoney;
+    }
+    
+    public void UpdatePopulation(int population)
+    {
+        currentPopulation = population;
+        UpdatePopulationDisplay();
+    }
+    
+    public void UpdateDayDisplay(int day)
+    {
+        currentDay = day;
+        UpdateDayDisplay();
+    }
+    
+    public int GetCurrentPopulation()
+    {
+        return currentPopulation;
     }
 }

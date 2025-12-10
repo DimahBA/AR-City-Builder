@@ -23,6 +23,12 @@ public class Building : MonoBehaviour
     
     void Update()
     {
+         // Add null check for buildingData
+        if (buildingData == null)
+        {
+            Debug.LogWarning($"Building {gameObject.name} has no BuildingData assigned!");
+            return;
+        }
         // Only check payment once the building is in a valid position
         if (!hasPaid && placementValidator != null && placementValidator.IsPlacementValid())
         {

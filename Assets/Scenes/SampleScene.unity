@@ -535,11 +535,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1619656612}
+    m_TransformParent: {fileID: 474549249}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: b9e5e4710ee5ca840b48879e991a3c0d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.037677765
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b9e5e4710ee5ca840b48879e991a3c0d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -547,7 +547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b9e5e4710ee5ca840b48879e991a3c0d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.038157463
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b9e5e4710ee5ca840b48879e991a3c0d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -698,10 +698,10 @@ GameObject:
   m_Component:
   - component: {fileID: 288439806}
   - component: {fileID: 288439805}
-  - component: {fileID: 288439804}
   - component: {fileID: 288439803}
   - component: {fileID: 288439802}
   - component: {fileID: 288439807}
+  - component: {fileID: 288439808}
   m_Layer: 0
   m_Name: FactoryTargetOrange
   m_TagString: Building
@@ -734,12 +734,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d29afa6b0b2a3649a0018673865cc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacencyDistance: 0.98
-  minDistanceFromRoad: 0.56
+  adjacencyDistance: 1.28
+  minDistanceFromRoad: 0.48
   validPlacementColor: {r: 1, g: 1, b: 1, a: 1}
   notNearRoadColor: {r: 1, g: 0.5, b: 0, a: 1}
   cannotAffordColor: {r: 1, g: 0, b: 0, a: 1}
---- !u!114 &288439804
+--- !u!114 &288439805
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -748,10 +748,52 @@ MonoBehaviour:
   m_GameObject: {fileID: 288439800}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 886328de6a5c14cbb85854fdf1a5085b, type: 3}
+  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StatusFilter: 1
+  PreviewVisible: 1
+  RuntimeOcclusion: 0
+  RuntimeCollider: 0
+  mTrackableName: Factory_2
+  mInitializedInEditor: 1
+  mDataSetPath: Vuforia/CityBuilderImageTargets.xml
+  mAspectRatio: 0.828571
+  mImageTargetType: 0
+  mWidth: 1
+  mHeight: 0.828571
+  mRuntimeTexture: {fileID: 0}
+  mMotionHint: 1
+  mTrackingOptimization: 0
+  mTrackingOptimizationNeedsUpgrade: 0
+  mPreview: {fileID: 288439808}
+--- !u!4 &288439806
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288439800}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.7, y: 0, z: 5.34}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &288439807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288439800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc40bd1a1bba6a645af1c20ea0d22fae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StatusFilter: 2
   UsePoseSmoothing: 0
   AnimationCurve:
     serializedVersion: 2
@@ -783,50 +825,8 @@ MonoBehaviour:
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &288439805
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 288439800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PreviewVisible: 1
-  RuntimeOcclusion: 0
-  RuntimeCollider: 0
-  mTrackableName: Factory_2
-  mInitializedInEditor: 1
-  mDataSetPath: Vuforia/CityBuilderImageTargets.xml
-  mAspectRatio: 0.828571
-  mImageTargetType: 0
-  mWidth: 1
-  mHeight: 0.828571
-  mRuntimeTexture: {fileID: 0}
-  mMotionHint: 1
-  mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 288439807}
---- !u!4 &288439806
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 288439800}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.7, y: 0, z: 5.34}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 489485694}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &288439807
+  smoothFollowerObject: {fileID: 294921651}
+--- !u!114 &288439808
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -845,6 +845,104 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 288439805}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!1 &293362296
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 293362298}
+  - component: {fileID: 293362297}
+  m_Layer: 0
+  m_Name: Smooth_follower (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &293362297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293362296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db44db125215a6a49ae44ac093b8ebd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageTarget: {fileID: 493842256}
+  positionSmoothness: 8
+  rotationSmoothness: 8
+  enableSmoothing: 1
+--- !u!4 &293362298
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293362296}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1550973507}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &294921651
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 294921653}
+  - component: {fileID: 294921652}
+  m_Layer: 0
+  m_Name: Smooth_follower (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &294921652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294921651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db44db125215a6a49ae44ac093b8ebd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageTarget: {fileID: 288439806}
+  positionSmoothness: 8
+  rotationSmoothness: 8
+  enableSmoothing: 1
+--- !u!4 &294921653
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294921651}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 489485694}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &302054125 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 211e717005a9c474da25373ed159514e, type: 3}
@@ -856,7 +954,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1314837888}
+    m_TransformParent: {fileID: 1746820954}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 119965d5076c1d74e9a3f30be5f8c8ab, type: 3}
       propertyPath: m_LocalScale.x
@@ -872,7 +970,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 119965d5076c1d74e9a3f30be5f8c8ab, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.067632675
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 119965d5076c1d74e9a3f30be5f8c8ab, type: 3}
       propertyPath: m_LocalPosition.y
@@ -880,7 +978,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 119965d5076c1d74e9a3f30be5f8c8ab, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.00999999
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 119965d5076c1d74e9a3f30be5f8c8ab, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1272,10 +1370,10 @@ GameObject:
   m_Component:
   - component: {fileID: 372790705}
   - component: {fileID: 372790704}
-  - component: {fileID: 372790703}
   - component: {fileID: 372790702}
   - component: {fileID: 372790701}
   - component: {fileID: 372790706}
+  - component: {fileID: 372790707}
   m_Layer: 0
   m_Name: FactoryTargetBlue
   m_TagString: Building
@@ -1308,12 +1406,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d29afa6b0b2a3649a0018673865cc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacencyDistance: 0.98
-  minDistanceFromRoad: 0.56
+  adjacencyDistance: 1.28
+  minDistanceFromRoad: 0.48
   validPlacementColor: {r: 1, g: 1, b: 1, a: 1}
   notNearRoadColor: {r: 1, g: 0.5, b: 0, a: 1}
   cannotAffordColor: {r: 1, g: 0, b: 0, a: 1}
---- !u!114 &372790703
+--- !u!114 &372790704
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1322,10 +1420,52 @@ MonoBehaviour:
   m_GameObject: {fileID: 372790699}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 886328de6a5c14cbb85854fdf1a5085b, type: 3}
+  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StatusFilter: 1
+  PreviewVisible: 1
+  RuntimeOcclusion: 0
+  RuntimeCollider: 0
+  mTrackableName: Factory_3
+  mInitializedInEditor: 1
+  mDataSetPath: Vuforia/CityBuilderImageTargets.xml
+  mAspectRatio: 0.828571
+  mImageTargetType: 0
+  mWidth: 1
+  mHeight: 0.828571
+  mRuntimeTexture: {fileID: 0}
+  mMotionHint: 1
+  mTrackingOptimization: 0
+  mTrackingOptimizationNeedsUpgrade: 0
+  mPreview: {fileID: 372790707}
+--- !u!4 &372790705
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372790699}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.7, y: 0, z: 7.38}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &372790706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372790699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc40bd1a1bba6a645af1c20ea0d22fae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StatusFilter: 2
   UsePoseSmoothing: 0
   AnimationCurve:
     serializedVersion: 2
@@ -1357,50 +1497,8 @@ MonoBehaviour:
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &372790704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 372790699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PreviewVisible: 1
-  RuntimeOcclusion: 0
-  RuntimeCollider: 0
-  mTrackableName: Factory_3
-  mInitializedInEditor: 1
-  mDataSetPath: Vuforia/CityBuilderImageTargets.xml
-  mAspectRatio: 0.828571
-  mImageTargetType: 0
-  mWidth: 1
-  mHeight: 0.828571
-  mRuntimeTexture: {fileID: 0}
-  mMotionHint: 1
-  mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 372790706}
---- !u!4 &372790705
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 372790699}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.7, y: 0, z: 7.38}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 920949717}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &372790706
+  smoothFollowerObject: {fileID: 1387491881}
+--- !u!114 &372790707
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1834,7 +1932,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1370637786}
+    m_TransformParent: {fileID: 1649258594}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 43b7ad4b9c5f35f46bfe9d591a079ce2, type: 3}
       propertyPath: m_LocalScale.x
@@ -1858,7 +1956,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 43b7ad4b9c5f35f46bfe9d591a079ce2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.010000229
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 43b7ad4b9c5f35f46bfe9d591a079ce2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1910,13 +2008,62 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 43b7ad4b9c5f35f46bfe9d591a079ce2, type: 3}
   m_PrefabInstance: {fileID: 472949779}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &474549247
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 474549249}
+  - component: {fileID: 474549248}
+  m_Layer: 0
+  m_Name: Smooth_follower (9)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &474549248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474549247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db44db125215a6a49ae44ac093b8ebd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageTarget: {fileID: 1619656612}
+  positionSmoothness: 8
+  rotationSmoothness: 8
+  enableSmoothing: 1
+--- !u!4 &474549249
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474549247}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 211276669}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &489485693
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 288439806}
+    m_TransformParent: {fileID: 294921653}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e2ab509ee711c384d9fccc404b709a67, type: 3}
       propertyPath: m_LocalScale.x
@@ -1932,7 +2079,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e2ab509ee711c384d9fccc404b709a67, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.069999695
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e2ab509ee711c384d9fccc404b709a67, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1940,7 +2087,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e2ab509ee711c384d9fccc404b709a67, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.03000021
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e2ab509ee711c384d9fccc404b709a67, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2002,10 +2149,10 @@ GameObject:
   m_Component:
   - component: {fileID: 493842256}
   - component: {fileID: 493842255}
-  - component: {fileID: 493842254}
   - component: {fileID: 493842253}
   - component: {fileID: 493842252}
   - component: {fileID: 493842257}
+  - component: {fileID: 493842258}
   m_Layer: 0
   m_Name: HouseTargetBlue
   m_TagString: Building
@@ -2038,12 +2185,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d29afa6b0b2a3649a0018673865cc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacencyDistance: 0.98
-  minDistanceFromRoad: 0.56
+  adjacencyDistance: 1.28
+  minDistanceFromRoad: 0.48
   validPlacementColor: {r: 1, g: 1, b: 1, a: 1}
   notNearRoadColor: {r: 1, g: 0.5, b: 0, a: 1}
   cannotAffordColor: {r: 1, g: 0, b: 0, a: 1}
---- !u!114 &493842254
+--- !u!114 &493842255
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2052,10 +2199,52 @@ MonoBehaviour:
   m_GameObject: {fileID: 493842251}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 886328de6a5c14cbb85854fdf1a5085b, type: 3}
+  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StatusFilter: 1
+  PreviewVisible: 1
+  RuntimeOcclusion: 0
+  RuntimeCollider: 0
+  mTrackableName: House_3
+  mInitializedInEditor: 1
+  mDataSetPath: Vuforia/CityBuilderImageTargets.xml
+  mAspectRatio: 0.828571
+  mImageTargetType: 0
+  mWidth: 1
+  mHeight: 0.828571
+  mRuntimeTexture: {fileID: 0}
+  mMotionHint: 1
+  mTrackingOptimization: 0
+  mTrackingOptimizationNeedsUpgrade: 0
+  mPreview: {fileID: 493842258}
+--- !u!4 &493842256
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493842251}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.55, y: 0, z: 5.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &493842257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493842251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc40bd1a1bba6a645af1c20ea0d22fae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StatusFilter: 2
   UsePoseSmoothing: 0
   AnimationCurve:
     serializedVersion: 2
@@ -2087,50 +2276,8 @@ MonoBehaviour:
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &493842255
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 493842251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PreviewVisible: 1
-  RuntimeOcclusion: 0
-  RuntimeCollider: 0
-  mTrackableName: House_3
-  mInitializedInEditor: 1
-  mDataSetPath: Vuforia/CityBuilderImageTargets.xml
-  mAspectRatio: 0.828571
-  mImageTargetType: 0
-  mWidth: 1
-  mHeight: 0.828571
-  mRuntimeTexture: {fileID: 0}
-  mMotionHint: 1
-  mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 493842257}
---- !u!4 &493842256
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 493842251}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.55, y: 0, z: 5.4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 1550973507}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &493842257
+  smoothFollowerObject: {fileID: 293362296}
+--- !u!114 &493842258
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2217,7 +2364,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1801169435}
+    m_TransformParent: {fileID: 997134711}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 06e12e582821d19459720a2d27301e88, type: 3}
       propertyPath: m_LocalScale.x
@@ -2233,7 +2380,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 06e12e582821d19459720a2d27301e88, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.03510952
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 06e12e582821d19459720a2d27301e88, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2241,7 +2388,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 06e12e582821d19459720a2d27301e88, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.01
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 06e12e582821d19459720a2d27301e88, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2494,6 +2641,55 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0541c96e3ecb2374daf5c89e762b4906, type: 3}
+--- !u!1 &569723464
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 569723466}
+  - component: {fileID: 569723465}
+  m_Layer: 0
+  m_Name: Smooth_follower (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &569723465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569723464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db44db125215a6a49ae44ac093b8ebd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageTarget: {fileID: 1635651902}
+  positionSmoothness: 8
+  rotationSmoothness: 8
+  enableSmoothing: 1
+--- !u!4 &569723466
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569723464}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 824406933}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &589238498
 GameObject:
   m_ObjectHideFlags: 0
@@ -2639,6 +2835,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 231e26b61fd0aa345b4ab42891dcde45, type: 3}
   m_PrefabInstance: {fileID: 597952265}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &622921887
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 622921889}
+  - component: {fileID: 622921888}
+  m_Layer: 0
+  m_Name: Smooth_follower (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &622921888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622921887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db44db125215a6a49ae44ac093b8ebd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageTarget: {fileID: 1676622229}
+  positionSmoothness: 8
+  rotationSmoothness: 8
+  enableSmoothing: 1
+--- !u!4 &622921889
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622921887}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1660582285}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &623096481
 GameObject:
   m_ObjectHideFlags: 0
@@ -2663,8 +2908,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 623096481}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.71, y: 0, z: 0.63}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.2000002, y: 1.2000002, z: 1.2000002}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -2757,7 +3002,7 @@ Transform:
   - {fileID: 2108818949}
   - {fileID: 302054125}
   - {fileID: 316160509}
-  m_Father: {fileID: 2023371380}
+  m_Father: {fileID: 1939830188}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &633862562
 PrefabInstance:
@@ -3386,7 +3631,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1635651902}
+    m_TransformParent: {fileID: 569723466}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 69d0c4451b391a94599ffc2671959963, type: 3}
       propertyPath: m_LocalScale.x
@@ -3402,7 +3647,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 69d0c4451b391a94599ffc2671959963, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.016048431
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 69d0c4451b391a94599ffc2671959963, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3410,7 +3655,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 69d0c4451b391a94599ffc2671959963, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.07999992
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 69d0c4451b391a94599ffc2671959963, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3702,7 +3947,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 372790705}
+    m_TransformParent: {fileID: 1387491883}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 7992cce8cb2e3924493877f8dcc35f1f, type: 3}
       propertyPath: m_LocalScale.x
@@ -4037,6 +4282,55 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 988206183}
   m_Mesh: {fileID: -6102804450836232372, guid: 46d63d074c7ebad428dad5bf004c68ff, type: 3}
+--- !u!1 &997134709
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 997134711}
+  - component: {fileID: 997134710}
+  m_Layer: 0
+  m_Name: Smooth_follower (10)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &997134710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997134709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db44db125215a6a49ae44ac093b8ebd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageTarget: {fileID: 1801169435}
+  positionSmoothness: 8
+  rotationSmoothness: 8
+  enableSmoothing: 1
+--- !u!4 &997134711
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997134709}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 524166904}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1020195065
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4487,6 +4781,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 231e26b61fd0aa345b4ab42891dcde45, type: 3}
   m_PrefabInstance: {fileID: 1168551626}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1171706509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1171706511}
+  - component: {fileID: 1171706510}
+  m_Layer: 0
+  m_Name: Smooth_follower (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1171706510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171706509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db44db125215a6a49ae44ac093b8ebd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageTarget: {fileID: 1795591986}
+  positionSmoothness: 8
+  rotationSmoothness: 8
+  enableSmoothing: 1
+--- !u!4 &1171706511
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171706509}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 205594884}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1177165773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4810,10 +5153,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1314837888}
   - component: {fileID: 1314837887}
-  - component: {fileID: 1314837886}
   - component: {fileID: 1314837885}
   - component: {fileID: 1314837884}
   - component: {fileID: 1314837889}
+  - component: {fileID: 1314837890}
   m_Layer: 0
   m_Name: HouseTargetPurple
   m_TagString: Building
@@ -4846,12 +5189,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d29afa6b0b2a3649a0018673865cc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacencyDistance: 0.98
-  minDistanceFromRoad: 0.56
+  adjacencyDistance: 1.28
+  minDistanceFromRoad: 0.48
   validPlacementColor: {r: 1, g: 1, b: 1, a: 1}
   notNearRoadColor: {r: 1, g: 0.5, b: 0, a: 1}
   cannotAffordColor: {r: 1, g: 0, b: 0, a: 1}
---- !u!114 &1314837886
+--- !u!114 &1314837887
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4860,10 +5203,52 @@ MonoBehaviour:
   m_GameObject: {fileID: 1314837883}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 886328de6a5c14cbb85854fdf1a5085b, type: 3}
+  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StatusFilter: 1
+  PreviewVisible: 1
+  RuntimeOcclusion: 0
+  RuntimeCollider: 0
+  mTrackableName: House_5
+  mInitializedInEditor: 1
+  mDataSetPath: Vuforia/CityBuilderImageTargets.xml
+  mAspectRatio: 0.828571
+  mImageTargetType: 0
+  mWidth: 1
+  mHeight: 0.828571
+  mRuntimeTexture: {fileID: 0}
+  mMotionHint: 1
+  mTrackingOptimization: 0
+  mTrackingOptimizationNeedsUpgrade: 0
+  mPreview: {fileID: 1314837890}
+--- !u!4 &1314837888
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314837883}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.5, y: 0, z: 1.83}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1314837889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314837883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc40bd1a1bba6a645af1c20ea0d22fae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StatusFilter: 2
   UsePoseSmoothing: 0
   AnimationCurve:
     serializedVersion: 2
@@ -4895,50 +5280,8 @@ MonoBehaviour:
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1314837887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1314837883}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PreviewVisible: 1
-  RuntimeOcclusion: 0
-  RuntimeCollider: 0
-  mTrackableName: House_5
-  mInitializedInEditor: 1
-  mDataSetPath: Vuforia/CityBuilderImageTargets.xml
-  mAspectRatio: 0.828571
-  mImageTargetType: 0
-  mWidth: 1
-  mHeight: 0.828571
-  mRuntimeTexture: {fileID: 0}
-  mMotionHint: 1
-  mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1314837889}
---- !u!4 &1314837888
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1314837883}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.5, y: 0, z: 1.83}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 306768548}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1314837889
+  smoothFollowerObject: {fileID: 1746820952}
+--- !u!114 &1314837890
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5112,10 +5455,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1370637786}
   - component: {fileID: 1370637785}
-  - component: {fileID: 1370637784}
   - component: {fileID: 1370637783}
   - component: {fileID: 1370637782}
   - component: {fileID: 1370637787}
+  - component: {fileID: 1370637788}
   m_Layer: 0
   m_Name: HouseTargetBrown
   m_TagString: Building
@@ -5148,12 +5491,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d29afa6b0b2a3649a0018673865cc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacencyDistance: 0.98
-  minDistanceFromRoad: 0.56
+  adjacencyDistance: 1.28
+  minDistanceFromRoad: 0.48
   validPlacementColor: {r: 1, g: 1, b: 1, a: 1}
   notNearRoadColor: {r: 1, g: 0.5, b: 0, a: 1}
   cannotAffordColor: {r: 1, g: 0, b: 0, a: 1}
---- !u!114 &1370637784
+--- !u!114 &1370637785
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5162,10 +5505,52 @@ MonoBehaviour:
   m_GameObject: {fileID: 1370637781}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 886328de6a5c14cbb85854fdf1a5085b, type: 3}
+  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StatusFilter: 1
+  PreviewVisible: 1
+  RuntimeOcclusion: 0
+  RuntimeCollider: 0
+  mTrackableName: House_2
+  mInitializedInEditor: 1
+  mDataSetPath: Vuforia/CityBuilderImageTargets.xml
+  mAspectRatio: 0.828571
+  mImageTargetType: 0
+  mWidth: 1
+  mHeight: 0.828571
+  mRuntimeTexture: {fileID: 0}
+  mMotionHint: 1
+  mTrackingOptimization: 0
+  mTrackingOptimizationNeedsUpgrade: 0
+  mPreview: {fileID: 1370637788}
+--- !u!4 &1370637786
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370637781}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.56, y: 0, z: 7.36}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1370637787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370637781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc40bd1a1bba6a645af1c20ea0d22fae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StatusFilter: 2
   UsePoseSmoothing: 0
   AnimationCurve:
     serializedVersion: 2
@@ -5197,50 +5582,8 @@ MonoBehaviour:
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1370637785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1370637781}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PreviewVisible: 1
-  RuntimeOcclusion: 0
-  RuntimeCollider: 0
-  mTrackableName: House_2
-  mInitializedInEditor: 1
-  mDataSetPath: Vuforia/CityBuilderImageTargets.xml
-  mAspectRatio: 0.828571
-  mImageTargetType: 0
-  mWidth: 1
-  mHeight: 0.828571
-  mRuntimeTexture: {fileID: 0}
-  mMotionHint: 1
-  mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1370637787}
---- !u!4 &1370637786
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1370637781}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.56, y: 0, z: 7.36}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 472949780}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1370637787
+  smoothFollowerObject: {fileID: 1649258592}
+--- !u!114 &1370637788
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5264,6 +5607,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: abb08a42bf6454448beb6026d6e79149, type: 3}
   m_PrefabInstance: {fileID: 1704519200}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1387491881
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1387491883}
+  - component: {fileID: 1387491882}
+  m_Layer: 0
+  m_Name: Smooth_follower (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1387491882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387491881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db44db125215a6a49ae44ac093b8ebd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageTarget: {fileID: 372790705}
+  positionSmoothness: 8
+  rotationSmoothness: 8
+  enableSmoothing: 1
+--- !u!4 &1387491883
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387491881}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 920949717}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1392539800
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5461,7 +5853,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 493842256}
+    m_TransformParent: {fileID: 293362298}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: bf57c5e32ba2a254da879975180feb4f, type: 3}
       propertyPath: m_LocalScale.x
@@ -5477,7 +5869,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bf57c5e32ba2a254da879975180feb4f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.006131172
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bf57c5e32ba2a254da879975180feb4f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5485,7 +5877,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bf57c5e32ba2a254da879975180feb4f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.03000021
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bf57c5e32ba2a254da879975180feb4f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5542,6 +5934,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: abb08a42bf6454448beb6026d6e79149, type: 3}
   m_PrefabInstance: {fileID: 157932447}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1572770643
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1572770645}
+  - component: {fileID: 1572770644}
+  m_Layer: 0
+  m_Name: DayManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1572770644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572770643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2aad80819784e4683493b2455c6af6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dayLengthInSeconds: 10
+  gameUI: {fileID: 535241539}
+--- !u!4 &1572770645
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572770643}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.1491556, y: 0.27187237, z: 6.318799}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1577749886 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0541c96e3ecb2374daf5c89e762b4906, type: 3}
@@ -5681,13 +6119,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1619656612}
   - component: {fileID: 1619656611}
-  - component: {fileID: 1619656610}
   - component: {fileID: 1619656609}
   - component: {fileID: 1619656608}
   - component: {fileID: 1619656613}
+  - component: {fileID: 1619656614}
   m_Layer: 0
   m_Name: CommercialTargetBlue
-  m_TagString: Untagged
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5704,8 +6142,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d29afa6b0b2a3649a0018673865cc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacencyDistance: 0.98
-  minDistanceFromRoad: 0.56
+  adjacencyDistance: 1.28
+  minDistanceFromRoad: 0.48
   validPlacementColor: {r: 1, g: 1, b: 1, a: 1}
   notNearRoadColor: {r: 1, g: 0.5, b: 0, a: 1}
   cannotAffordColor: {r: 1, g: 0, b: 0, a: 1}
@@ -5722,7 +6160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingData: {fileID: 11400000, guid: 29545b72870fede489c3e61e29988297, type: 2}
---- !u!114 &1619656610
+--- !u!114 &1619656611
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5731,10 +6169,52 @@ MonoBehaviour:
   m_GameObject: {fileID: 1619656606}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 886328de6a5c14cbb85854fdf1a5085b, type: 3}
+  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StatusFilter: 1
+  PreviewVisible: 1
+  RuntimeOcclusion: 0
+  RuntimeCollider: 0
+  mTrackableName: Mall_2
+  mInitializedInEditor: 1
+  mDataSetPath: Vuforia/CityBuilderImageTargets.xml
+  mAspectRatio: 0.828571
+  mImageTargetType: 0
+  mWidth: 1
+  mHeight: 0.828571
+  mRuntimeTexture: {fileID: 0}
+  mMotionHint: 1
+  mTrackingOptimization: 0
+  mTrackingOptimizationNeedsUpgrade: 0
+  mPreview: {fileID: 1619656614}
+--- !u!4 &1619656612
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619656606}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.62, y: 0, z: 5.37}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1619656613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619656606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc40bd1a1bba6a645af1c20ea0d22fae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StatusFilter: 2
   UsePoseSmoothing: 0
   AnimationCurve:
     serializedVersion: 2
@@ -5766,50 +6246,8 @@ MonoBehaviour:
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1619656611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1619656606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PreviewVisible: 1
-  RuntimeOcclusion: 0
-  RuntimeCollider: 0
-  mTrackableName: Mall_2
-  mInitializedInEditor: 1
-  mDataSetPath: Vuforia/CityBuilderImageTargets.xml
-  mAspectRatio: 0.828571
-  mImageTargetType: 0
-  mWidth: 1
-  mHeight: 0.828571
-  mRuntimeTexture: {fileID: 0}
-  mMotionHint: 1
-  mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1619656613}
---- !u!4 &1619656612
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1619656606}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.62, y: 0, z: 5.37}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 211276669}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1619656613
+  smoothFollowerObject: {fileID: 474549247}
+--- !u!114 &1619656614
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5834,7 +6272,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1795591986}
+    m_TransformParent: {fileID: 1171706511}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 7818629d312c2b242bb1a9d9db9be212, type: 3}
       propertyPath: m_LocalScale.x
@@ -5850,7 +6288,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7818629d312c2b242bb1a9d9db9be212, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7818629d312c2b242bb1a9d9db9be212, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5866,7 +6304,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7818629d312c2b242bb1a9d9db9be212, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7818629d312c2b242bb1a9d9db9be212, type: 3}
       propertyPath: m_LocalRotation.y
@@ -5915,10 +6353,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1635651902}
   - component: {fileID: 1635651901}
-  - component: {fileID: 1635651900}
   - component: {fileID: 1635651899}
   - component: {fileID: 1635651898}
   - component: {fileID: 1635651903}
+  - component: {fileID: 1635651904}
   m_Layer: 0
   m_Name: HouseTargetGreen
   m_TagString: Building
@@ -5951,12 +6389,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d29afa6b0b2a3649a0018673865cc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacencyDistance: 0.98
-  minDistanceFromRoad: 0.56
+  adjacencyDistance: 1.28
+  minDistanceFromRoad: 0.48
   validPlacementColor: {r: 1, g: 1, b: 1, a: 1}
   notNearRoadColor: {r: 1, g: 0.5, b: 0, a: 1}
   cannotAffordColor: {r: 1, g: 0, b: 0, a: 1}
---- !u!114 &1635651900
+--- !u!114 &1635651901
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5965,10 +6403,52 @@ MonoBehaviour:
   m_GameObject: {fileID: 1635651897}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 886328de6a5c14cbb85854fdf1a5085b, type: 3}
+  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StatusFilter: 1
+  PreviewVisible: 1
+  RuntimeOcclusion: 0
+  RuntimeCollider: 0
+  mTrackableName: House_4
+  mInitializedInEditor: 1
+  mDataSetPath: Vuforia/CityBuilderImageTargets.xml
+  mAspectRatio: 0.828571
+  mImageTargetType: 0
+  mWidth: 1
+  mHeight: 0.828571
+  mRuntimeTexture: {fileID: 0}
+  mMotionHint: 1
+  mTrackingOptimization: 0
+  mTrackingOptimizationNeedsUpgrade: 0
+  mPreview: {fileID: 1635651904}
+--- !u!4 &1635651902
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635651897}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.49, y: 0, z: 3.49}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1635651903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635651897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc40bd1a1bba6a645af1c20ea0d22fae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StatusFilter: 2
   UsePoseSmoothing: 0
   AnimationCurve:
     serializedVersion: 2
@@ -6000,50 +6480,8 @@ MonoBehaviour:
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1635651901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1635651897}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PreviewVisible: 1
-  RuntimeOcclusion: 0
-  RuntimeCollider: 0
-  mTrackableName: House_4
-  mInitializedInEditor: 1
-  mDataSetPath: Vuforia/CityBuilderImageTargets.xml
-  mAspectRatio: 0.828571
-  mImageTargetType: 0
-  mWidth: 1
-  mHeight: 0.828571
-  mRuntimeTexture: {fileID: 0}
-  mMotionHint: 1
-  mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1635651903}
---- !u!4 &1635651902
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1635651897}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.49, y: 0, z: 3.49}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 824406933}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1635651903
+  smoothFollowerObject: {fileID: 569723464}
+--- !u!114 &1635651904
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6062,6 +6500,55 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1635651901}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!1 &1649258592
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1649258594}
+  - component: {fileID: 1649258593}
+  m_Layer: 0
+  m_Name: Smooth_follower (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1649258593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649258592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db44db125215a6a49ae44ac093b8ebd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageTarget: {fileID: 1370637786}
+  positionSmoothness: 8
+  rotationSmoothness: 8
+  enableSmoothing: 1
+--- !u!4 &1649258594
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649258592}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 472949780}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1652147719 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cb63823035e28c64799eb3090a1d2d38, type: 3}
@@ -6073,7 +6560,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1676622229}
+    m_TransformParent: {fileID: 622921889}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 858b466981bd14f47818c5f812d73839, type: 3}
       propertyPath: m_LocalScale.x
@@ -6089,7 +6576,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 858b466981bd14f47818c5f812d73839, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 858b466981bd14f47818c5f812d73839, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6105,7 +6592,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 858b466981bd14f47818c5f812d73839, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 858b466981bd14f47818c5f812d73839, type: 3}
       propertyPath: m_LocalRotation.y
@@ -6278,13 +6765,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1676622229}
   - component: {fileID: 1676622228}
-  - component: {fileID: 1676622227}
   - component: {fileID: 1676622225}
   - component: {fileID: 1676622224}
   - component: {fileID: 1676622230}
+  - component: {fileID: 1676622231}
   m_Layer: 0
   m_Name: CommercialTargetOrange
-  m_TagString: Untagged
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6301,8 +6788,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d29afa6b0b2a3649a0018673865cc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacencyDistance: 0.98
-  minDistanceFromRoad: 0.56
+  adjacencyDistance: 1.28
+  minDistanceFromRoad: 0.48
   validPlacementColor: {r: 1, g: 1, b: 1, a: 1}
   notNearRoadColor: {r: 1, g: 0.5, b: 0, a: 1}
   cannotAffordColor: {r: 1, g: 0, b: 0, a: 1}
@@ -6319,7 +6806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingData: {fileID: 11400000, guid: 29545b72870fede489c3e61e29988297, type: 2}
---- !u!114 &1676622227
+--- !u!114 &1676622228
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6328,10 +6815,52 @@ MonoBehaviour:
   m_GameObject: {fileID: 1676622223}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 886328de6a5c14cbb85854fdf1a5085b, type: 3}
+  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StatusFilter: 1
+  PreviewVisible: 1
+  RuntimeOcclusion: 0
+  RuntimeCollider: 0
+  mTrackableName: Mall_1
+  mInitializedInEditor: 1
+  mDataSetPath: Vuforia/CityBuilderImageTargets.xml
+  mAspectRatio: 1
+  mImageTargetType: 0
+  mWidth: 1
+  mHeight: 1
+  mRuntimeTexture: {fileID: 0}
+  mMotionHint: 1
+  mTrackingOptimization: 0
+  mTrackingOptimizationNeedsUpgrade: 0
+  mPreview: {fileID: 1676622231}
+--- !u!4 &1676622229
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676622223}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.62, y: 0, z: 9.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1676622230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676622223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc40bd1a1bba6a645af1c20ea0d22fae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StatusFilter: 2
   UsePoseSmoothing: 0
   AnimationCurve:
     serializedVersion: 2
@@ -6363,50 +6892,8 @@ MonoBehaviour:
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1676622228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1676622223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PreviewVisible: 1
-  RuntimeOcclusion: 0
-  RuntimeCollider: 0
-  mTrackableName: Mall_1
-  mInitializedInEditor: 1
-  mDataSetPath: Vuforia/CityBuilderImageTargets.xml
-  mAspectRatio: 1
-  mImageTargetType: 0
-  mWidth: 1
-  mHeight: 1
-  mRuntimeTexture: {fileID: 0}
-  mMotionHint: 1
-  mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1676622230}
---- !u!4 &1676622229
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1676622223}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.62, y: 0, z: 9.9}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 1660582285}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1676622230
+  smoothFollowerObject: {fileID: 622921887}
+--- !u!114 &1676622231
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6736,7 +7223,7 @@ Transform:
   m_GameObject: {fileID: 1707889295}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -8.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6866,6 +7353,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 231e26b61fd0aa345b4ab42891dcde45, type: 3}
   m_PrefabInstance: {fileID: 1729317968}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1746820952
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1746820954}
+  - component: {fileID: 1746820953}
+  m_Layer: 0
+  m_Name: Smooth_follower (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1746820953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746820952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db44db125215a6a49ae44ac093b8ebd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageTarget: {fileID: 1314837888}
+  positionSmoothness: 8
+  rotationSmoothness: 8
+  enableSmoothing: 1
+--- !u!4 &1746820954
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746820952}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 306768548}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1789592004
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6938,10 +7474,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1795591986}
   - component: {fileID: 1795591985}
-  - component: {fileID: 1795591984}
   - component: {fileID: 1795591987}
   - component: {fileID: 1795591988}
   - component: {fileID: 1795591989}
+  - component: {fileID: 1795591990}
   m_Layer: 0
   m_Name: FactoryTargetBrown
   m_TagString: Building
@@ -6949,7 +7485,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1795591984
+--- !u!114 &1795591985
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6958,10 +7494,82 @@ MonoBehaviour:
   m_GameObject: {fileID: 1795591983}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 886328de6a5c14cbb85854fdf1a5085b, type: 3}
+  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StatusFilter: 1
+  PreviewVisible: 1
+  RuntimeOcclusion: 0
+  RuntimeCollider: 0
+  mTrackableName: Factory_1
+  mInitializedInEditor: 1
+  mDataSetPath: Vuforia/CityBuilderImageTargets.xml
+  mAspectRatio: 0.828571
+  mImageTargetType: 0
+  mWidth: 1
+  mHeight: 0.828571
+  mRuntimeTexture: {fileID: 0}
+  mMotionHint: 1
+  mTrackingOptimization: 0
+  mTrackingOptimizationNeedsUpgrade: 0
+  mPreview: {fileID: 1795591990}
+--- !u!4 &1795591986
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795591983}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.7, y: 0, z: 9.89}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1795591987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795591983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d29afa6b0b2a3649a0018673865cc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  adjacencyDistance: 1.28
+  minDistanceFromRoad: 0.48
+  validPlacementColor: {r: 1, g: 1, b: 1, a: 1}
+  notNearRoadColor: {r: 1, g: 0.5, b: 0, a: 1}
+  cannotAffordColor: {r: 1, g: 0, b: 0, a: 1}
+--- !u!114 &1795591988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795591983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5d041e7fe30720488da0a84bcdf8ebf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingData: {fileID: 11400000, guid: acbf3ed5cdb72714d9657b9b78d27563, type: 2}
+--- !u!114 &1795591989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795591983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc40bd1a1bba6a645af1c20ea0d22fae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StatusFilter: 2
   UsePoseSmoothing: 0
   AnimationCurve:
     serializedVersion: 2
@@ -6993,80 +7601,8 @@ MonoBehaviour:
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1795591985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1795591983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PreviewVisible: 1
-  RuntimeOcclusion: 0
-  RuntimeCollider: 0
-  mTrackableName: Factory_1
-  mInitializedInEditor: 1
-  mDataSetPath: Vuforia/CityBuilderImageTargets.xml
-  mAspectRatio: 0.828571
-  mImageTargetType: 0
-  mWidth: 1
-  mHeight: 0.828571
-  mRuntimeTexture: {fileID: 0}
-  mMotionHint: 1
-  mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1795591989}
---- !u!4 &1795591986
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1795591983}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.7, y: 0, z: 9.89}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 205594884}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1795591987
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1795591983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d29afa6b0b2a3649a0018673865cc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  adjacencyDistance: 0.98
-  minDistanceFromRoad: 0.56
-  validPlacementColor: {r: 1, g: 1, b: 1, a: 1}
-  notNearRoadColor: {r: 1, g: 0.5, b: 0, a: 1}
-  cannotAffordColor: {r: 1, g: 0, b: 0, a: 1}
---- !u!114 &1795591988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1795591983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5d041e7fe30720488da0a84bcdf8ebf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buildingData: {fileID: 11400000, guid: acbf3ed5cdb72714d9657b9b78d27563, type: 2}
---- !u!114 &1795591989
+  smoothFollowerObject: {fileID: 1171706509}
+--- !u!114 &1795591990
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7095,13 +7631,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1801169435}
   - component: {fileID: 1801169434}
-  - component: {fileID: 1801169433}
   - component: {fileID: 1801169432}
   - component: {fileID: 1801169431}
   - component: {fileID: 1801169436}
+  - component: {fileID: 1801169437}
   m_Layer: 0
   m_Name: CommercialTargetGreen
-  m_TagString: Untagged
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7118,8 +7654,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d29afa6b0b2a3649a0018673865cc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacencyDistance: 0.98
-  minDistanceFromRoad: 0.56
+  adjacencyDistance: 1.28
+  minDistanceFromRoad: 0.48
   validPlacementColor: {r: 1, g: 1, b: 1, a: 1}
   notNearRoadColor: {r: 1, g: 0.5, b: 0, a: 1}
   cannotAffordColor: {r: 1, g: 0, b: 0, a: 1}
@@ -7136,7 +7672,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingData: {fileID: 11400000, guid: 29545b72870fede489c3e61e29988297, type: 2}
---- !u!114 &1801169433
+--- !u!114 &1801169434
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7145,10 +7681,52 @@ MonoBehaviour:
   m_GameObject: {fileID: 1801169429}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 886328de6a5c14cbb85854fdf1a5085b, type: 3}
+  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StatusFilter: 1
+  PreviewVisible: 1
+  RuntimeOcclusion: 0
+  RuntimeCollider: 0
+  mTrackableName: Mall_3
+  mInitializedInEditor: 1
+  mDataSetPath: Vuforia/CityBuilderImageTargets.xml
+  mAspectRatio: 0.828571
+  mImageTargetType: 0
+  mWidth: 1
+  mHeight: 0.828571
+  mRuntimeTexture: {fileID: 0}
+  mMotionHint: 1
+  mTrackingOptimization: 0
+  mTrackingOptimizationNeedsUpgrade: 0
+  mPreview: {fileID: 1801169437}
+--- !u!4 &1801169435
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801169429}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.62, y: 0, z: 7.38}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1801169436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801169429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc40bd1a1bba6a645af1c20ea0d22fae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StatusFilter: 2
   UsePoseSmoothing: 0
   AnimationCurve:
     serializedVersion: 2
@@ -7180,50 +7758,8 @@ MonoBehaviour:
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1801169434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801169429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PreviewVisible: 1
-  RuntimeOcclusion: 0
-  RuntimeCollider: 0
-  mTrackableName: Mall_3
-  mInitializedInEditor: 1
-  mDataSetPath: Vuforia/CityBuilderImageTargets.xml
-  mAspectRatio: 0.828571
-  mImageTargetType: 0
-  mWidth: 1
-  mHeight: 0.828571
-  mRuntimeTexture: {fileID: 0}
-  mMotionHint: 1
-  mTrackingOptimization: 0
-  mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1801169436}
---- !u!4 &1801169435
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801169429}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.62, y: 0, z: 7.38}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 524166904}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1801169436
+  smoothFollowerObject: {fileID: 997134709}
+--- !u!114 &1801169437
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7336,7 +7872,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 2043127976}
+    m_TransformParent: {fileID: 2016663536}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: cb63823035e28c64799eb3090a1d2d38, type: 3}
       propertyPath: m_LocalScale.x
@@ -7352,7 +7888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cb63823035e28c64799eb3090a1d2d38, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.057
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cb63823035e28c64799eb3090a1d2d38, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7360,7 +7896,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cb63823035e28c64799eb3090a1d2d38, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.063
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cb63823035e28c64799eb3090a1d2d38, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7464,6 +8000,55 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 641dd89fbf59b9d4781e6e6730ed69a1, type: 3}
+--- !u!1 &1939830186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1939830188}
+  - component: {fileID: 1939830187}
+  m_Layer: 0
+  m_Name: Smooth_follower (11)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1939830187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939830186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db44db125215a6a49ae44ac093b8ebd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageTarget: {fileID: 2023371380}
+  positionSmoothness: 8
+  rotationSmoothness: 8
+  enableSmoothing: 1
+--- !u!4 &1939830188
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939830186}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 623096482}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1950954888
 GameObject:
   m_ObjectHideFlags: 0
@@ -7670,6 +8255,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b82f1ac1800a62343a3c9816621232e8, type: 3}
   m_PrefabInstance: {fileID: 1245140079}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2016663534
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2016663536}
+  - component: {fileID: 2016663535}
+  m_Layer: 0
+  m_Name: Smooth_follower
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2016663535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016663534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db44db125215a6a49ae44ac093b8ebd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageTarget: {fileID: 2043127976}
+  positionSmoothness: 8
+  rotationSmoothness: 8
+  enableSmoothing: 1
+--- !u!4 &2016663536
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016663534}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1652147719}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2021692179
 GameObject:
   m_ObjectHideFlags: 0
@@ -7763,8 +8397,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2023371380}
   - component: {fileID: 2023371379}
-  - component: {fileID: 2023371382}
   - component: {fileID: 2023371381}
+  - component: {fileID: 2023371382}
   m_Layer: 0
   m_Name: CityTarget
   m_TagString: Untagged
@@ -7811,8 +8445,7 @@ Transform:
   m_LocalPosition: {x: 0.91, y: 0, z: 6.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 623096482}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2023371381
@@ -7824,10 +8457,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2023371377}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53fe1e718bb15ed4bae1e03c1dcba303, type: 3}
+  m_Script: {fileID: 11500000, guid: fc40bd1a1bba6a645af1c20ea0d22fae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StatusFilter: 0
+  StatusFilter: 2
   UsePoseSmoothing: 0
   AnimationCurve:
     serializedVersion: 2
@@ -7859,6 +8492,7 @@ MonoBehaviour:
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
+  smoothFollowerObject: {fileID: 1939830186}
 --- !u!114 &2023371382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7888,7 +8522,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2043127976}
   - component: {fileID: 2043127975}
-  - component: {fileID: 2043127974}
   - component: {fileID: 2043127977}
   - component: {fileID: 2043127978}
   - component: {fileID: 2043127979}
@@ -7900,50 +8533,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2043127974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2043127973}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 886328de6a5c14cbb85854fdf1a5085b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  StatusFilter: 1
-  UsePoseSmoothing: 0
-  AnimationCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 3.3333333
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 0.3
-      value: 1
-      inSlope: 3.3333333
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  OnTargetFound:
-    m_PersistentCalls:
-      m_Calls: []
-  OnTargetLost:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &2043127975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7983,8 +8572,7 @@ Transform:
   m_LocalPosition: {x: -4.5, y: 0, z: 9.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 1652147719}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2043127977
@@ -7999,8 +8587,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d29afa6b0b2a3649a0018673865cc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adjacencyDistance: 0.98
-  minDistanceFromRoad: 0.56
+  adjacencyDistance: 1.28
+  minDistanceFromRoad: 0.48
   validPlacementColor: {r: 1, g: 1, b: 1, a: 1}
   notNearRoadColor: {r: 1, g: 0.5, b: 0, a: 1}
   cannotAffordColor: {r: 1, g: 0, b: 0, a: 1}
@@ -8026,7 +8614,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2043127973}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 886328de6a5c14cbb85854fdf1a5085b, type: 3}
+  m_Script: {fileID: 11500000, guid: fc40bd1a1bba6a645af1c20ea0d22fae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   StatusFilter: 2
@@ -8061,6 +8649,7 @@ MonoBehaviour:
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
+  smoothFollowerObject: {fileID: 2016663534}
 --- !u!114 &2043127980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9579,6 +10168,8 @@ SceneRoots:
   m_Roots:
   - {fileID: 1707889300}
   - {fileID: 705507995}
+  - {fileID: 535241538}
+  - {fileID: 1572770645}
   - {fileID: 2023371380}
   - {fileID: 2043127976}
   - {fileID: 1370637786}
@@ -9591,4 +10182,15 @@ SceneRoots:
   - {fileID: 1676622229}
   - {fileID: 1619656612}
   - {fileID: 1801169435}
-  - {fileID: 535241538}
+  - {fileID: 1939830188}
+  - {fileID: 2016663536}
+  - {fileID: 1649258594}
+  - {fileID: 293362298}
+  - {fileID: 569723466}
+  - {fileID: 1746820954}
+  - {fileID: 1171706511}
+  - {fileID: 294921653}
+  - {fileID: 1387491883}
+  - {fileID: 622921889}
+  - {fileID: 474549249}
+  - {fileID: 997134711}
