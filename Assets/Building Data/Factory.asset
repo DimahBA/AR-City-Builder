@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Factory
   buildingType: 2
-  cost: 10000
+  cost: 2500
   description: 
   housingCapacity: 0
   dailyOperatingCost: 0
   happinessBonus: 0
   serviceRadius: 0
   dailyMaintenanceCost: 0
-  pollutionPenalty: 15
-  pollutionRadius: 7
+  pollutionPenalty: 25
+  pollutionRadius: 2
   baseIncome: 0
   commercialRadius: 0
   minPopulationThreshold: 0

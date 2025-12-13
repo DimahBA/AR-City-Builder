@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: Services
   buildingType: 1
-  cost: 0
+  cost: 1000
   description: 
   housingCapacity: 0
   dailyOperatingCost: 1000
   happinessBonus: 20
-  serviceRadius: 5
+  serviceRadius: 4
   dailyMaintenanceCost: 0
   pollutionPenalty: 0
   pollutionRadius: 0

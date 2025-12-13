@@ -66,7 +66,7 @@ Happiness is tracked per house and summarizes how livable an area is. It combine
 
 - [x] Implement visual feedback for placement validity, adjacency to roads, and affordability (colors on the building mesh).
 
-- [ ] Connect population calculations so the UI population label reflects the sum of active residents each day.
+- [x] Connect population calculations so the UI population label reflects the sum of active residents each day.
 
 ## Data model and building types
 
@@ -74,21 +74,23 @@ Happiness is tracked per house and summarizes how livable an area is. It combine
 
 - [x] Add per-type parameters: house capacity; service radius and happiness bonus; factory pollution radius and penalty; commercial base income and multipliers.
 
-- [ ] Implement dedicated components or a central system to handle per-type logic (House, ServiceBuilding, FactoryBuilding, CommercialBuilding) rather than string checks.
+- [x] Implement dedicated components or a central system to handle per-type logic (House, ServiceBuilding, FactoryBuilding, CommercialBuilding) rather than string checks.
 
 ## Houses and population
 
-- [ ] Give each house a fixed capacity and track its current population (often equal to capacity unless abandoned).
+- [x] Give each house a fixed capacity and track its current population.
 
-- [ ] Implement a daily population update that sums all non-abandoned houses and sends the total to `GameUI.UpdatePopulation`.
+- [ ] increse house population gradually until it reaches max capacity.
+
+- [x] Implement a daily population update that sums all non-abandoned houses and sends the total to `GameUI.UpdatePopulation`.
 
 - [ ] Track a happiness value per house, recalculated each day based on nearby services and factories.
 
-- [ ] Add abandonment logic: if happiness stays below a threshold for several days, mark the house as abandoned, remove its population from the city, and disable its contribution to commercial zones.
+- [x] Add abandonment logic: if happiness stays below a threshold for several days, mark the house as abandoned, remove its population from the city, and disable its contribution to commercial zones.
 
 ## Services (hospitals, schools, etc.)
 
-- [ ] Find assets for each service (a hospital, a school, a park)
+- [x] Find assets for each service (a hospital, a school, a park)
 
 - [ ] Add a daily operating cost field for service buildings and subtract it each day if the city can pay.
 
@@ -96,15 +98,13 @@ Happiness is tracked per house and summarizes how livable an area is. It combine
 
 - [ ] Implement a radius- or “closest N houses”–based happiness boost each day for houses in range.
 
-- [ ] Add visual feedback (e.g., icon or color) when a service is shut down due to lack of funds.
+- [ ] Add visual feedback (change color to gray) when a service is shut down due to lack of funds.
 
 ## Factories
 
 - [x] Ensure factories use the generic one-time construction cost system already in `Building`.
 
-- [ ] Implement negative happiness effects (noise/pollution) on nearby houses each day, scaled by distance or within a fixed radius.
-
-- [ ] [optional] Add visual cues when an area is heavily polluted or when factories are hurting nearby residents’ happiness.
+- [x] Implement negative happiness effects (noise/pollution) on nearby houses each day, scaled by distance or within a fixed radius.
 
 ## Commercial zones and income
 
@@ -132,4 +132,4 @@ Happiness is tracked per house and summarizes how livable an area is. It combine
 
 - [ ] In `ProcessDayEnd`, call all subsystems in a clear order: update services (cost and status), recalc house happiness, update abandonment, recalc population, then calculate commercial income.
 
-- [ ] Avoid repeated expensive calls per frame; keep `FindObjectsOfType<Building>` to the once-per-day tick or maintain central registries of buildings by type
+- [x] Avoid repeated expensive calls per frame; keep `FindObjectsOfType<Building>` to the once-per-day tick or maintain central registries of buildings by type

@@ -7,23 +7,49 @@ public class GameUI : MonoBehaviour
     private Label moneyLabel;
     private Label populationLabel;
     private Label dayLabel;
-    private int currentMoney = 100000;
+    private ProgressBar dayProgressBar;
+
+    private int currentMoney = 7000;
     private int currentPopulation = 0;
     private int currentDay = 0;
     
     private void Start()
-    {
-        var root = UIDoc.rootVisualElement;
-        moneyLabel = root.Q<Label>("MoneyLabel");
-        populationLabel = root.Q<Label>("DensityLabel");
-        dayLabel = root.Q<Label>("DayLabel");
+{
+    var root = UIDoc.rootVisualElement;
 
-        UpdateMoneyDisplay();
-        UpdatePopulationDisplay();
-        UpdateDayDisplay();
+    moneyLabel = root.Q<Label>("MoneyLabel");
+    populationLabel = root.Q<Label>("DensityLabel");
+    dayLabel = root.Q<Label>("DayLabel");
+    dayProgressBar = root.Q<ProgressBar>("DayProgressBar");
+
+    if (dayProgressBar != null)
+    {
+        // Set the range to 0-1 to match your progress values
+        dayProgressBar.lowValue = 0f;
+        dayProgressBar.highValue = 1f;
+        dayProgressBar.value = 0f;
+    }
+    else
+    {
+        Debug.LogError("DayProgressBar not found in UI Document!");
     }
 
+    UpdateMoneyDisplay();
+    UpdatePopulationDisplay();
+    UpdateDayDisplay();
+    UpdateDayProgress(0f);
+}
 
+
+
+
+    public void UpdateDayProgress(float progress)
+    {
+        if (dayProgressBar != null)
+        {
+            dayProgressBar.value = Mathf.Clamp01(progress);
+        }
+    }
 
     
     void UpdateMoneyDisplay()
@@ -60,8 +86,6 @@ public class GameUI : MonoBehaviour
 
     public void SpendMoney(int amount)
     {
-        Debug.LogError($"[SPENDING MONEY] Amount: ${amount}");
-        Debug.LogError($"Stack Trace:\n{System.Environment.StackTrace}");
         
         currentMoney -= amount;
         UpdateMoneyDisplay();

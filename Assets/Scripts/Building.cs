@@ -85,13 +85,13 @@ public class Building : MonoBehaviour
             BuildingManager.Instance.RegisterBuilding(this);
             isRegistered = true;
             
-            // Initialize house population when registered
+            // Initialize based on building type
             if (buildingData.buildingType == BuildingType.House)
             {
                 currentPopulation = buildingData.housingCapacity;
-                //happiness = buildingData.baseHappiness;
                 isAbandoned = false;
-                // Add happiness indicator if PopulationManager wants them shown
+                
+                // Add happiness indicator if enabled
                 if (PopulationManager.Instance != null && PopulationManager.Instance.showHappinessIndicators)
                 {
                     if (GetComponent<HappinessIndicator>() == null)
@@ -101,23 +101,24 @@ public class Building : MonoBehaviour
                 }
                 Debug.Log($"[Building] House '{buildingData.buildingName}' initialized with {currentPopulation} residents");
             }
+            else if (buildingData.buildingType == BuildingType.Service)
+            {
+                // Add service status indicator
+                if (GetComponent<ServiceStatusIndicator>() == null)
+                {
+                    gameObject.AddComponent<ServiceStatusIndicator>();
+                }
+                Debug.Log($"[Building] Service '{buildingData.buildingName}' initialized with status indicator");
+            }
             else
             {
-                Debug.Log($"[Building] Non-house building registered: {buildingData.buildingType}");
+                Debug.Log($"[Building] Non-house/service building registered: {buildingData.buildingType}");
             }
             
             Debug.Log($"[Building] Successfully registered {buildingData.buildingName} as {buildingData.buildingType}");
         }
-        else if (BuildingManager.Instance == null)
-        {
-            Debug.LogError("[Building] Cannot register - BuildingManager.Instance is NULL! Make sure BuildingManager exists in scene.");
-        }
-        else if (isRegistered)
-        {
-            Debug.LogWarning($"[Building] {buildingData.buildingName} is already registered!");
-        }
     }
-    
+
     void UnregisterFromManager()
     {
         if (isRegistered && BuildingManager.Instance != null)

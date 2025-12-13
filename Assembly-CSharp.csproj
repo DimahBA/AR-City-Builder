@@ -63,25 +63,33 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.62f3\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\buildingVisualizer.cs" />
     <Compile Include="Assets\Scripts\CustomTrackableEventHandler.cs" />
     <Compile Include="Assets\Scripts\DayManager.cs" />
     <Compile Include="Assets\Scripts\HappinessIndicator.cs" />
     <Compile Include="Assets\Scripts\PopulationManager.cs" />
     <Compile Include="Assets\Scripts\BuildingData.cs" />
     <Compile Include="Assets\Scripts\Building.cs" />
+    <Compile Include="Assets\Scripts\CommercialIndicator.cs" />
     <Compile Include="Assets\Scripts\GameUI.cs" />
     <Compile Include="Assets\Scripts\building_manager.cs" />
+    <Compile Include="Assets\Scripts\ServiceManager.cs" />
     <Compile Include="Assets\Scripts\Placement_validatior.cs" />
+    <Compile Include="Assets\Scripts\ServiceIndicator.cs" />
     <Compile Include="Assets\Scripts\smoothFollower.cs" />
+    <Compile Include="Assets\Scripts\ServiceVisualizer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\City\kenney_city-kit-commercial_2.1\License.txt" />
     <None Include="Assets\City\kenney_city-kit-suburban_20\License.txt" />
+    <None Include="Assets\City\kenney_holiday-kit\License.txt" />
+    <None Include="Assets\City\kenney_modular-buildings\License.txt" />
     <None Include="Assets\City\kenney_city-kit-roads\License.txt" />
     <None Include="Assets\GameUI.uxml" />
+    <None Include="Assets\StreamingAssets\Vuforia\CityBuilderImageTargets.xml" />
     <None Include="Assets\City\kenney_city-kit-industrial_1.0\License.txt" />
     <None Include="Assets\StreamingAssets\Vuforia\VuforiaMars_Images.xml" />
-    <None Include="Assets\StreamingAssets\Vuforia\CityBuilderImageTargets.xml" />
+    <None Include="Assets\GameUIStyle.uss" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

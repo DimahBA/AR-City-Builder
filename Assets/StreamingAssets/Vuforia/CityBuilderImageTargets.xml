@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
+    <ImageTarget name="park" size="1.000000 1.037594" />
+    <ImageTarget name="hospital" size="1.000000 1.041276" />
+    <ImageTarget name="school" size="1.000000 1.071834" />
     <ImageTarget name="city" size="1.000000 1.075540" />
     <ImageTarget name="Mall_3" size="1.000000 0.828571" />
     <ImageTarget name="Mall_2" size="1.000000 0.828571" />
@@ -13,8 +16,5 @@
     <ImageTarget name="Factory_3" size="1.000000 0.828571" />
     <ImageTarget name="Factory_2" size="1.000000 0.828571" />
     <ImageTarget name="Factory_1" size="1.000000 0.828571" />
-    <ImageTarget name="school" size="1.000000 1.000000" />
-    <ImageTarget name="hospital" size="1.000000 1.000000" />
-    <ImageTarget name="park" size="1.000000 1.000000" />
   </Tracking>
 </QCARConfig>

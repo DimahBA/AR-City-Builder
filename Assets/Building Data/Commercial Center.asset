@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: commercial
   buildingType: 3
-  cost: 8000
+  cost: 2500
   description: 
   housingCapacity: 0
   dailyOperatingCost: 0
@@ -23,8 +23,8 @@ MonoBehaviour:
   dailyMaintenanceCost: 0
   pollutionPenalty: 0
   pollutionRadius: 0
-  baseIncome: 100
-  commercialRadius: 6
+  baseIncome: 500
+  commercialRadius: 10.85
   minPopulationThreshold: 5
-  lowHappinessMultiplier: 0.5
+  lowHappinessMultiplier: 0.25
   happinessThreshold: 50

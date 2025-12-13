@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: House
   buildingType: 0
-  cost: 5000
+  cost: 750
   description: 
   housingCapacity: 10
   dailyOperatingCost: 0

@@ -15,7 +15,7 @@ D:/City Builder
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-52301
+55247
 Successfully changed project path to: D:/City Builder
 D:/City Builder
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,16 +49,16 @@ D:/City Builder
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [27284]  Target information:
+Player connection [35836]  Target information:
 
-Player connection [27284]  * "[IP] 192.168.1.124 [Port] 0 [Flags] 2 [Guid] 2227334824 [EditorId] 2227334824 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-084FIPT6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [35836]  * "[IP] 192.168.1.119 [Port] 0 [Flags] 2 [Guid] 2045563768 [EditorId] 2045563768 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-084FIPT6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [27284] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [27284] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [35836] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [35836] Host joined alternative multi-casting on [225.0.0.222:34997]...
 Input System module state changed to: Initialized.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-Refreshing native plugins compatible for Editor in 35.40 ms, found 6 plugins.
-Preloading 2 native plugins for Editor in 6.89 ms.
+Refreshing native plugins compatible for Editor in 32.59 ms, found 6 plugins.
+Preloading 2 native plugins for Editor in 5.22 ms.
 Initialize engine version: 2022.3.62f3 (96770f904ca7)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.62f3/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path D:/City Builder/Assets
@@ -73,47 +73,47 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f3/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f3/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56128
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56284
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.62f3/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.026774 seconds.
-- Loaded All Assemblies, in  0.860 seconds
+Registered in 0.020376 seconds.
+- Loaded All Assemblies, in  0.647 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 568 ms
+Android Extension - Scanning For ADB Devices 461 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.302 seconds
-Domain Reload Profiling: 2153ms
-	BeginReloadAssembly (251ms)
+- Finished resetting the current domain, in  1.076 seconds
+Domain Reload Profiling: 1718ms
+	BeginReloadAssembly (198ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (100ms)
-	RebuildNativeTypeToScriptingClass (22ms)
-	initialDomainReloadingComplete (158ms)
-	LoadAllAssembliesAndSetupDomain (319ms)
-		LoadAssemblies (247ms)
+	RebuildCommonClasses (59ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (119ms)
+	LoadAllAssembliesAndSetupDomain (248ms)
+		LoadAssemblies (193ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (311ms)
-			TypeCache.Refresh (308ms)
-				TypeCache.ScanAssembly (282ms)
+		AnalyzeDomain (243ms)
+			TypeCache.Refresh (241ms)
+				TypeCache.ScanAssembly (220ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (1303ms)
+	FinalizeReload (1076ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1201ms)
+		SetupLoadedEditorAssemblies (997ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (804ms)
-			SetLoadedEditorAssemblies (9ms)
+			InitializePlatformSupportModulesInManaged (642ms)
+			SetLoadedEditorAssemblies (7ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (7ms)
-			ProcessInitializeOnLoadAttributes (275ms)
-			ProcessInitializeOnLoadMethodAttributes (106ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (258ms)
+			ProcessInitializeOnLoadMethodAttributes (85ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -123,117 +123,52 @@ Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.522 seconds
+- Loaded All Assemblies, in  1.232 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.466 seconds
-Domain Reload Profiling: 2982ms
-	BeginReloadAssembly (343ms)
+- Finished resetting the current domain, in  1.194 seconds
+Domain Reload Profiling: 2421ms
+	BeginReloadAssembly (261ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (14ms)
+		DisableScriptedObjects (9ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (41ms)
-	RebuildCommonClasses (76ms)
-	RebuildNativeTypeToScriptingClass (22ms)
-	initialDomainReloadingComplete (107ms)
-	LoadAllAssembliesAndSetupDomain (968ms)
-		LoadAssemblies (734ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (435ms)
-			TypeCache.Refresh (388ms)
-				TypeCache.ScanAssembly (355ms)
-			ScanForSourceGeneratedMonoScriptInfo (32ms)
-			ResolveRequiredComponents (12ms)
-	FinalizeReload (1467ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1115ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (48ms)
-			SetLoadedEditorAssemblies (9ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (136ms)
-			ProcessInitializeOnLoadAttributes (841ms)
-			ProcessInitializeOnLoadMethodAttributes (58ms)
-			AfterProcessingInitializeOnLoad (22ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (15ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 23.29 ms, found 6 plugins.
-Preloading 2 native plugins for Editor in 0.29 ms.
-Unloading 3720 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (92.0 KB). Loaded Objects now: 4526.
-Memory consumption went from 145.8 MB to 145.7 MB.
-Total: 9.889900 ms (FindLiveObjects: 0.778900 ms CreateObjectMapping: 0.350100 ms MarkObjects: 8.468700 ms  DeleteObjects: 0.290100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Caller must complete domain reload
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.174 seconds
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.653 seconds
-Domain Reload Profiling: 3817ms
-	BeginReloadAssembly (375ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (15ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (77ms)
-	RebuildCommonClasses (80ms)
-	RebuildNativeTypeToScriptingClass (33ms)
+		CreateAndSetChildDomain (35ms)
+	RebuildCommonClasses (57ms)
+	RebuildNativeTypeToScriptingClass (16ms)
 	initialDomainReloadingComplete (85ms)
-	LoadAllAssembliesAndSetupDomain (590ms)
-		LoadAssemblies (725ms)
+	LoadAllAssembliesAndSetupDomain (807ms)
+		LoadAssemblies (610ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (80ms)
-			TypeCache.Refresh (16ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (38ms)
-			ResolveRequiredComponents (19ms)
-	FinalizeReload (2654ms)
+		AnalyzeDomain (355ms)
+			TypeCache.Refresh (310ms)
+				TypeCache.ScanAssembly (283ms)
+			ScanForSourceGeneratedMonoScriptInfo (30ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (1195ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1395ms)
+		SetupLoadedEditorAssemblies (903ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (61ms)
-			SetLoadedEditorAssemblies (11ms)
+			InitializePlatformSupportModulesInManaged (37ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (178ms)
-			ProcessInitializeOnLoadAttributes (1044ms)
-			ProcessInitializeOnLoadMethodAttributes (72ms)
-			AfterProcessingInitializeOnLoad (28ms)
+			BeforeProcessingInitializeOnLoad (116ms)
+			ProcessInitializeOnLoadAttributes (683ms)
+			ProcessInitializeOnLoadMethodAttributes (40ms)
+			AfterProcessingInitializeOnLoad (21ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (17ms)
-Refreshing native plugins compatible for Editor in 20.73 ms, found 6 plugins.
-Preloading 2 native plugins for Editor in 0.30 ms.
-Unloading 3681 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 20 unused Assets / (64.0 KB). Loaded Objects now: 4531.
-Memory consumption went from 136.9 MB to 136.8 MB.
-Total: 10.690800 ms (FindLiveObjects: 0.843600 ms CreateObjectMapping: 0.377100 ms MarkObjects: 9.232400 ms  DeleteObjects: 0.232000 ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 19.22 ms, found 6 plugins.
+Preloading 2 native plugins for Editor in 0.26 ms.
+Unloading 3730 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (92.2 KB). Loaded Objects now: 4536.
+Memory consumption went from 146.0 MB to 146.0 MB.
+Total: 9.658800 ms (FindLiveObjects: 0.739500 ms CreateObjectMapping: 0.465800 ms MarkObjects: 8.164700 ms  DeleteObjects: 0.286900 ms)
 
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
@@ -242,6 +177,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:scripting/monoscript/fileName/NewBehaviourScript.cs: b21687ddb03d73bd9f0c1daecb9714de -> 
   custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/ServiceBuilding.cs: 12c3a1e7846e6cf15945249c36d00691 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
@@ -249,173 +185,246 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/precompiled-assembly-types:Assembly-CSharp: e2348c7f28ff24885e49bc68313125e9 -> e14f06522fb7a5895fe8d037e00b2dee
 ========================================================================
 Received Import Request.
-  Time since last request: 4367.715035 seconds.
-  path: Assets/Scripts/NewBehaviourScript.cs
-  artifactKey: Guid(53fe1e718bb15ed4bae1e03c1dcba303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/NewBehaviourScript.cs using Guid(53fe1e718bb15ed4bae1e03c1dcba303) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '7968b87c412c62d7ac868d0992210a19') in 0.008028 seconds
+  Time since last request: 68725.847826 seconds.
+  path: Assets/free-money-icon-799-thumb.png
+  artifactKey: Guid(3e77250e5ae99bb4d9bd88e2aeabdf30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/free-money-icon-799-thumb.png using Guid(3e77250e5ae99bb4d9bd88e2aeabdf30) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8bd8792e5591c15b69c3e035d059f0f0') in 0.100796 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Caller must complete domain reload
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.053 seconds
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.120 seconds
-Domain Reload Profiling: 3166ms
-	BeginReloadAssembly (331ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (56ms)
-	RebuildCommonClasses (82ms)
-	RebuildNativeTypeToScriptingClass (29ms)
-	initialDomainReloadingComplete (81ms)
-	LoadAllAssembliesAndSetupDomain (521ms)
-		LoadAssemblies (666ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (66ms)
-			TypeCache.Refresh (15ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (31ms)
-			ResolveRequiredComponents (17ms)
-	FinalizeReload (2121ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1040ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (42ms)
-			SetLoadedEditorAssemblies (7ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (139ms)
-			ProcessInitializeOnLoadAttributes (771ms)
-			ProcessInitializeOnLoadMethodAttributes (53ms)
-			AfterProcessingInitializeOnLoad (27ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
-Refreshing native plugins compatible for Editor in 36.86 ms, found 6 plugins.
-Preloading 2 native plugins for Editor in 0.37 ms.
-Unloading 3680 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 20 unused Assets / (64.0 KB). Loaded Objects now: 4535.
-Memory consumption went from 136.6 MB to 136.6 MB.
-Total: 76.651800 ms (FindLiveObjects: 0.908300 ms CreateObjectMapping: 0.403300 ms MarkObjects: 63.684600 ms  DeleteObjects: 11.652500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:scripting/monoscript/fileName/NewBehaviourScript.cs: b21687ddb03d73bd9f0c1daecb9714de -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/SpawnOncePerTarget.cs: b21687ddb03d73bd9f0c1daecb9714de -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/precompiled-assembly-types:Assembly-CSharp: beee5626afef0cc306feed17e89c6197 -> e14f06522fb7a5895fe8d037e00b2dee
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 24.105179 seconds.
-  path: Assets/Scripts/SpawnOncePerTarget.cs
-  artifactKey: Guid(53fe1e718bb15ed4bae1e03c1dcba303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/SpawnOncePerTarget.cs using Guid(53fe1e718bb15ed4bae1e03c1dcba303) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '5dae660db37227f567d3e2de6c41221a') in 0.003877 seconds
+  Time since last request: 235.021035 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Previews/fence.png
+  artifactKey: Guid(717eefbd5733c9c4b9e56af17689795f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Previews/fence.png using Guid(717eefbd5733c9c4b9e56af17689795f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '90cef6d2bc534dd869cbcca01971b927') in 0.014046 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Caller must complete domain reload
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.071 seconds
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.773 seconds
-Domain Reload Profiling: 3837ms
-	BeginReloadAssembly (363ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (11ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (63ms)
-	RebuildCommonClasses (77ms)
-	RebuildNativeTypeToScriptingClass (26ms)
-	initialDomainReloadingComplete (76ms)
-	LoadAllAssembliesAndSetupDomain (522ms)
-		LoadAssemblies (686ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (63ms)
-			TypeCache.Refresh (17ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (25ms)
-			ResolveRequiredComponents (15ms)
-	FinalizeReload (2774ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1400ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (60ms)
-			SetLoadedEditorAssemblies (11ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (179ms)
-			ProcessInitializeOnLoadAttributes (1049ms)
-			ProcessInitializeOnLoadMethodAttributes (67ms)
-			AfterProcessingInitializeOnLoad (33ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (20ms)
-Refreshing native plugins compatible for Editor in 24.34 ms, found 6 plugins.
-Preloading 2 native plugins for Editor in 0.81 ms.
-Unloading 3680 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 20 unused Assets / (64.0 KB). Loaded Objects now: 4539.
-Memory consumption went from 136.6 MB to 136.6 MB.
-Total: 10.348200 ms (FindLiveObjects: 0.813100 ms CreateObjectMapping: 0.364100 ms MarkObjects: 8.931100 ms  DeleteObjects: 0.237300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:scripting/monoscript/fileName/NewBehaviourScript.cs: b21687ddb03d73bd9f0c1daecb9714de -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/SpawnOncePerTarget.cs: 09d94f8447a95c0ed61a1edd6458a9ed -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 6be4085545f61fb20d7c7c8babd83f24 -> e14f06522fb7a5895fe8d037e00b2dee
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 95.387327 seconds.
-  path: Assets/City/kenney_city-kit-roads/Models/FBX format/road-split.fbx
-  artifactKey: Guid(f86b27f1885a777469598d0b9a556491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/City/kenney_city-kit-roads/Models/FBX format/road-split.fbx using Guid(f86b27f1885a777469598d0b9a556491) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+  Time since last request: 0.012139 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Previews/fence-1x3.png
+  artifactKey: Guid(afeac2521e15ffb4c8467c6e1769a612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Previews/fence-1x3.png using Guid(afeac2521e15ffb4c8467c6e1769a612) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '8bdaac05402a4510eeb83089766ed6ab') in 0.332859 seconds
+ -> (artifact id: '3bdc9d747d797bf69ad21fe2cc13d1a9') in 0.006859 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Previews/fence-2x2.png
+  artifactKey: Guid(c50a2e8599cf58446a03e3a989a7488f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Previews/fence-2x2.png using Guid(c50a2e8599cf58446a03e3a989a7488f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'bd98e18eccee9e7845c50ac919f06fe8') in 0.008818 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Previews/fence-3x2.png
+  artifactKey: Guid(5746df66f0a31124bad773243c4e56e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Previews/fence-3x2.png using Guid(5746df66f0a31124bad773243c4e56e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '55320490c03172843aff0aa0b07a2466') in 0.010143 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/City/kenney_city-kit-suburban_20/Previews/fence-low.png
+  artifactKey: Guid(035c206fdf594b846afc97d3691ed742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-suburban_20/Previews/fence-low.png using Guid(035c206fdf594b846afc97d3691ed742) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'cfee69d19616944da42fb00c0c6da872') in 0.009964 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/City/kenney_holiday-kit/Previews/festivus-pole.png
+  artifactKey: Guid(be55ffbf1dbe3ca44b7e6da4f6c9f5d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_holiday-kit/Previews/festivus-pole.png using Guid(be55ffbf1dbe3ca44b7e6da4f6c9f5d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'b69655b43b949042aee73f39721883be') in 0.008010 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/City/kenney_holiday-kit/Previews/floor-wood-snow.png
+  artifactKey: Guid(fcad0d69fd5a58849bfc1a1456edf487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_holiday-kit/Previews/floor-wood-snow.png using Guid(fcad0d69fd5a58849bfc1a1456edf487) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '71a6368273c95fc834955c35af8301a6') in 0.009202 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.026976 seconds.
+  path: Assets/City/kenney_holiday-kit/Previews/gingerbread-woman.png
+  artifactKey: Guid(ca425ecbb93527f40a3e5269ded93a3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_holiday-kit/Previews/gingerbread-woman.png using Guid(ca425ecbb93527f40a3e5269ded93a3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '27bde0e27b3b1fbef7319e0c59c79ab8') in 0.009214 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.014562 seconds.
+  path: Assets/City/kenney_holiday-kit/Previews/hanukkah-menorah.png
+  artifactKey: Guid(63a5f9bec834ee148b46974363cc59a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_holiday-kit/Previews/hanukkah-menorah.png using Guid(63a5f9bec834ee148b46974363cc59a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '703d6db01cf806fe9d0e83a1f395825c') in 0.008565 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.010601 seconds.
+  path: Assets/City/kenney_holiday-kit/Previews/hanukkah-menorah-candles.png
+  artifactKey: Guid(b27417d5383d0584289ae40367b265f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_holiday-kit/Previews/hanukkah-menorah-candles.png using Guid(b27417d5383d0584289ae40367b265f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '23c940c2bdabdcfcf7886d85c4a65806') in 0.010145 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/City/kenney_holiday-kit/Previews/kwanzaa-kikombe.png
+  artifactKey: Guid(0c1c22efbcc957e4da9dc0f54dd237ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_holiday-kit/Previews/kwanzaa-kikombe.png using Guid(0c1c22efbcc957e4da9dc0f54dd237ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'a5d2ed45759ffdea8fdfae371c0b32c3') in 0.008453 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/City/kenney_holiday-kit/Previews/kwanzaa-kinara.png
+  artifactKey: Guid(e61ce4fbdca751d46a5ef94e952b7802) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_holiday-kit/Previews/kwanzaa-kinara.png using Guid(e61ce4fbdca751d46a5ef94e952b7802) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '061ecfd118a61144405f54ffe784ae7d') in 0.011354 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Editor/Vuforia/ImageTargetTextures/CityBuilderImageTargets/hospital_scaled.jpg
+  artifactKey: Guid(09278e7366724c69bc5bbe2269ddc404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/Vuforia/ImageTargetTextures/CityBuilderImageTargets/hospital_scaled.jpg using Guid(09278e7366724c69bc5bbe2269ddc404) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'ede07d77b2f3e7614fb4bc452f072e3f') in 0.016964 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/City/kenney_holiday-kit/Previews/kwanzaa-kinara-alternative.png
+  artifactKey: Guid(58dce198af8a56149857ae88db6e9e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_holiday-kit/Previews/kwanzaa-kinara-alternative.png using Guid(58dce198af8a56149857ae88db6e9e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'ca44b656d27b0e2ca48bebc1ba5ccafd') in 0.009197 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/City/kenney_holiday-kit/Previews/lantern.png
+  artifactKey: Guid(25834c95d42bace4cad37fe01e864f0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_holiday-kit/Previews/lantern.png using Guid(25834c95d42bace4cad37fe01e864f0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'a44b01499288835d20e89bb5be5112c0') in 0.009750 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/City/kenney_holiday-kit/Previews/lights-colored.png
+  artifactKey: Guid(614700824f4ea7e4db5a35ff2989785a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_holiday-kit/Previews/lights-colored.png using Guid(614700824f4ea7e4db5a35ff2989785a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'fa625ed938b41cbbc0f64919bbdf630a') in 0.009716 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/City/kenney_city-kit-commercial_2.1/Previews/low-detail-building-a.png
+  artifactKey: Guid(235db7d1503c1ad4c87e63acf0fa23eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-commercial_2.1/Previews/low-detail-building-a.png using Guid(235db7d1503c1ad4c87e63acf0fa23eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'e717c5e10ee6882e33043064dcde848e') in 0.011899 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/City/kenney_city-kit-commercial_2.1/Previews/low-detail-building-c.png
+  artifactKey: Guid(4d60c826e035d624e84625574852f2b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-commercial_2.1/Previews/low-detail-building-c.png using Guid(4d60c826e035d624e84625574852f2b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'f3561301473dcef3792f9538117af65a') in 0.008473 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/City/kenney_city-kit-commercial_2.1/Previews/low-detail-building-b.png
+  artifactKey: Guid(54a6e1fbcbb4b6a42b20c9f162e5f9f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-commercial_2.1/Previews/low-detail-building-b.png using Guid(54a6e1fbcbb4b6a42b20c9f162e5f9f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'b2a8c41411fb4dcbfa01d3374e705dec') in 0.008655 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/City/kenney_holiday-kit/Previews/lights-green.png
+  artifactKey: Guid(f74b9553d5883954281487abbfd11d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_holiday-kit/Previews/lights-green.png using Guid(f74b9553d5883954281487abbfd11d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'ccad43e34222f0440e3443de958d3dc7') in 0.009975 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/City/kenney_city-kit-commercial_2.1/Previews/low-detail-building-i.png
+  artifactKey: Guid(4b0aba4ac1f934f49905d6eeba7e0b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-commercial_2.1/Previews/low-detail-building-i.png using Guid(4b0aba4ac1f934f49905d6eeba7e0b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '439a834b544851bdf639203764a79925') in 0.008445 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Editor/Vuforia/ImageTargetTextures/CityBuilderImageTargets/House_4_scaled.jpg
+  artifactKey: Guid(8f2493ea154a465e8eb45e75944d0df8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/Vuforia/ImageTargetTextures/CityBuilderImageTargets/House_4_scaled.jpg using Guid(8f2493ea154a465e8eb45e75944d0df8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8317d3934d040d4d0f80f113cf941cd9') in 0.023149 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/City/kenney_city-kit-commercial_2.1/Previews/low-detail-building-e.png
+  artifactKey: Guid(f0d3265430fc086439ffbabe0560184e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/City/kenney_city-kit-commercial_2.1/Previews/low-detail-building-e.png using Guid(f0d3265430fc086439ffbabe0560184e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'a950a0d042177ce55d9c555face076bb') in 0.009969 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
 AssetImportWorker is now disconnected from the server

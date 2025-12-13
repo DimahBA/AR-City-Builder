@@ -15,6 +15,10 @@ public class BuildingPlacementValidator : MonoBehaviour
     public Color notNearRoadColor = new Color(1f, 0.5f, 0f); // Orange
     public Color cannotAffordColor = Color.red;
     
+    [Header("Smooth Follower Reference")]
+    [Tooltip("If using a smooth follower, assign it here to color that object instead")]
+    public GameObject smoothFollowerObject;
+    
     private Renderer[] buildingRenderers;
     private Dictionary<Renderer, Material[]> originalMaterials;
     private Material invalidMaterial;
@@ -27,14 +31,26 @@ public class BuildingPlacementValidator : MonoBehaviour
     
     void Start()
     {
+        // If smooth follower is assigned, get renderers from there instead
+        GameObject targetObject = smoothFollowerObject != null ? smoothFollowerObject : gameObject;
+        
         // Get all renderers in the building (including inactive children)
-        buildingRenderers = GetComponentsInChildren<Renderer>(includeInactive: true);
+        buildingRenderers = targetObject.GetComponentsInChildren<Renderer>(includeInactive: true);
+        
+        Debug.Log($"[PlacementValidator] Found {buildingRenderers.Length} renderers on {targetObject.name}");
         
         // Store original materials
         originalMaterials = new Dictionary<Renderer, Material[]>();
         foreach (Renderer rend in buildingRenderers)
         {
-            originalMaterials[rend] = rend.materials;
+            // Clone the materials so we don't modify the original assets
+            Material[] clonedMats = new Material[rend.materials.Length];
+            for (int i = 0; i < rend.materials.Length; i++)
+            {
+                clonedMats[i] = new Material(rend.materials[i]);
+            }
+            originalMaterials[rend] = clonedMats;
+            rend.materials = clonedMats; // Apply cloned materials
         }
         
         // Create materials for feedback
@@ -47,6 +63,33 @@ public class BuildingPlacementValidator : MonoBehaviour
         // Get references
         buildingScript = GetComponent<Building>();
         gameUI = FindObjectOfType<GameUI>();
+        
+        // Try to auto-find smooth follower if not assigned
+        if (smoothFollowerObject == null)
+        {
+            CustomTrackableEventHandler handler = GetComponent<CustomTrackableEventHandler>();
+            if (handler != null && handler.smoothFollowerObject != null)
+            {
+                smoothFollowerObject = handler.smoothFollowerObject;
+                Debug.Log($"[PlacementValidator] Auto-found smooth follower: {smoothFollowerObject.name}");
+                
+                // Re-initialize with smooth follower renderers
+                targetObject = smoothFollowerObject;
+                buildingRenderers = targetObject.GetComponentsInChildren<Renderer>(includeInactive: true);
+                
+                originalMaterials.Clear();
+                foreach (Renderer rend in buildingRenderers)
+                {
+                    Material[] clonedMats = new Material[rend.materials.Length];
+                    for (int i = 0; i < rend.materials.Length; i++)
+                    {
+                        clonedMats[i] = new Material(rend.materials[i]);
+                    }
+                    originalMaterials[rend] = clonedMats;
+                    rend.materials = clonedMats;
+                }
+            }
+        }
     }
 
     
@@ -59,8 +102,6 @@ public class BuildingPlacementValidator : MonoBehaviour
     {
         GameObject[] roads = GameObject.FindGameObjectsWithTag("road");
         
-        //Debug.Log($"Found {roads.Length} roads");
-        
         bool nearRoad = false;
         bool collidingWithRoad = false;
         
@@ -69,35 +110,25 @@ public class BuildingPlacementValidator : MonoBehaviour
             foreach (GameObject road in roads)
             {
                 float distance = GetDistanceToRoad(road);
-                //Debug.Log($"Distance to {road.name}: {distance}");
                 
                 if (distance < minDistanceFromRoad)
                 {
                     collidingWithRoad = true;
-                    //Debug.Log("Too close to road - colliding!");
                     break;
                 }
                 
                 if (distance <= adjacencyDistance)
                 {
                     nearRoad = true;
-                    //Debug.Log("Near road - valid!");
                 }
             }
-        }
-        else
-        {
-            //Debug.LogWarning("No roads found with tag 'road'!");
         }
         
         isNearRoad = nearRoad;
         isPlacementValid = !collidingWithRoad;
         
-        //Debug.Log($"Placement Valid: {isPlacementValid}, Near Road: {isNearRoad}");
-        
         UpdateVisualFeedback();
     }
-
 
     
     void UpdateVisualFeedback()
@@ -140,6 +171,8 @@ public class BuildingPlacementValidator : MonoBehaviour
     {
         foreach (Renderer rend in buildingRenderers)
         {
+            if (rend == null) continue;
+            
             Material[] mats = new Material[rend.materials.Length];
             for (int i = 0; i < mats.Length; i++)
             {
@@ -153,6 +186,8 @@ public class BuildingPlacementValidator : MonoBehaviour
     {
         foreach (Renderer rend in buildingRenderers)
         {
+            if (rend == null) continue;
+            
             if (originalMaterials.ContainsKey(rend))
             {
                 rend.materials = originalMaterials[rend];
@@ -162,8 +197,10 @@ public class BuildingPlacementValidator : MonoBehaviour
     
     float GetDistanceToRoad(GameObject road)
     {
-        // Simple transform-based distance (doesn't need colliders)
-        Vector3 buildingPos = transform.position;
+        // Use smooth follower position if available, otherwise use this object's position
+        Vector3 buildingPos = smoothFollowerObject != null ? 
+                              smoothFollowerObject.transform.position : 
+                              transform.position;
         Vector3 roadPos = road.transform.position;
         
         // Only consider XZ plane (ignore height difference)
